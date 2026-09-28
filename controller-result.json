@@ -1,22 +1,22 @@
 {
   "continuation": {
-    "dispatched": true,
-    "returncode": 0,
-    "stderr": ""
+    "dispatched": false,
+    "reason": "disabled"
   },
   "executed": [
     {
-      "id": "WU-001",
+      "id": "WU-002",
       "result": {
-        "artifact": "artifacts/wu-001-result.json",
-        "files": 5
+        "artifact": "artifacts/wu-002-result.json",
+        "reason": "not_implemented_yet"
       },
-      "status": "done"
+      "status": "blocked"
     }
   ],
   "state_counts": {
+    "blocked": 1,
     "done": 1,
-    "ready": 3
+    "ready": 2
   },
-  "timestamp": 1790605018
+  "timestamp": 1790605044
 }

@@ -18,13 +18,20 @@
     },
     {
       "acceptance": "Static file types, PE metadata, resource inventory, imports, strings index, and PLE headers are reported with offsets and tool versions.",
+      "attempts": 1,
+      "claimed_at": 1790605044,
       "depends_on": [
         "WU-001"
       ],
       "id": "WU-002",
       "method": "Offline static triage only; no binary execution.",
       "question": "What are the real formats and immediately observable structures?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-002-result.json",
+        "reason": "not_implemented_yet"
+      },
+      "status": "blocked",
+      "updated_at": 1790605044
     },
     {
       "acceptance": "Portmon sessions are inventoried and raw direction/timing/byte records are preserved with segmentation hypotheses kept separate.",
