@@ -213,8 +213,10 @@ def execute_workunit(workunit, corpus_root, artifacts_root):
         artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "frames": "candidate frame records from WU-006", "fields": ["device", "operation", "length", "bytes", "timestamp", "result"], "start_end_rules": {"start": "serial open or first write", "end": "close, timeout cluster, or session boundary"}, "confidence": "STRUCTURE_OBSERVED_SEMANTICS_UNKNOWN"})
         return "done", {"artifact": str(artifact), "status": "candidate_frame_schema"}
     if workunit_id == "WU-009":
-        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "autocalibration": {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN", "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"]}, "automaticWrite": False})
-        return "done", {"artifact": str(artifact), "status": "evidence_indexed_unknowns_preserved"}
+        fields = {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN"}
+        unresolved = [key for key, value in fields.items() if value == "UNKNOWN"]
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"], "automaticWrite": False, "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim"})
+        return "ready", {"artifact": str(artifact), "status": "retry_required", "unresolved": unresolved, "retryable": True}
     if workunit_id == "WU-010":
         artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "protocol_status": "saturated_for_closed_corpus", "closure_rule": "all mandatory WorkUnits complete; unresolved fields remain explicit UNKNOWN", "remaining_unknowns": ["ECU-side command semantics", "unobserved firmware branches", "physical validation"]})
         return "done", {"artifact": str(artifact), "protocol_status": "saturated_for_closed_corpus"}
@@ -269,14 +271,14 @@ def main(argv=None):
         status, result = execute_workunit(claim, args.corpus_root, args.artifacts_root)
         release_workunit(args.state_path, claim["id"], status=status, result=result)
         executed.append({"id": claim["id"], "status": status, "result": result})
-        if status != "done":
+        if status not in {"done", "ready"}:
             break
 
     summary = {
         "timestamp": int(time.time()),
         "executed": executed,
         "state_counts": summarize_state(args.state_path),
-        "continuation": maybe_dispatch_continue(args.auto_dispatch and any(item["status"] == "done" for item in executed)),
+        "continuation": maybe_dispatch_continue(args.auto_dispatch and any(item["status"] in {"done", "ready"} for item in executed)),
     }
     print(json.dumps(summary, indent=2, sort_keys=True))
     return 0
