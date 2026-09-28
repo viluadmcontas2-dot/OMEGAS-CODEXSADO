@@ -1,85 +1,11 @@
 {
   "continuation": {
-    "dispatched": true,
-    "returncode": 0,
-    "stderr": ""
+    "dispatched": false,
+    "reason": "disabled"
   },
-  "executed": [
-    {
-      "id": "WU-002",
-      "result": {
-        "artifact": "artifacts/wu-002-result.json",
-        "files": 4
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-003",
-      "result": {
-        "artifact": "artifacts/wu-003-result.json",
-        "lines": 2631711
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-004",
-      "result": {
-        "artifact": "artifacts/wu-004-result.json",
-        "claims": 3
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-005",
-      "result": {
-        "artifact": "artifacts/wu-005-result.json",
-        "protocol_status": "open_pending_deep_protocol_workunits"
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-006",
-      "result": {
-        "artifact": "artifacts/wu-006-result.json",
-        "commands": 500
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-007",
-      "result": {
-        "artifact": "artifacts/wu-007-result.json",
-        "routines": 3
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-008",
-      "result": {
-        "artifact": "artifacts/wu-008-result.json",
-        "status": "candidate_frame_schema"
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-009",
-      "result": {
-        "artifact": "artifacts/wu-009-result.json",
-        "status": "evidence_indexed_unknowns_preserved"
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-010",
-      "result": {
-        "artifact": "artifacts/wu-010-result.json",
-        "protocol_status": "saturated_for_closed_corpus"
-      },
-      "status": "done"
-    }
-  ],
+  "executed": [],
   "state_counts": {
     "done": 10
   },
-  "timestamp": 1790605694
+  "timestamp": 1790605706
 }
