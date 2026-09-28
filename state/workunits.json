@@ -151,12 +151,7 @@
       "id": "WU-009",
       "method": "Join routine, command, frame, and static evidence into an evidence-indexed responsibility map.",
       "question": "Which autocalibration routines and consumers are proven or unknown?",
-      "result": {
-        "artifact": "artifacts/wu-009-result.json",
-        "status": "evidence_indexed_unknowns_preserved"
-      },
-      "status": "done",
-      "updated_at": 1790605694
+      "status": "ready"
     },
     {
       "acceptance": "Protocol closes only after WU-001 through WU-009 are done and every unknown is explicit.",
@@ -169,12 +164,7 @@
       "id": "WU-010",
       "method": "Run closure validation over all mandatory artifacts and preserve unresolved gaps.",
       "question": "Is the complete closed-corpus protocol dossier internally consistent?",
-      "result": {
-        "artifact": "artifacts/wu-010-result.json",
-        "protocol_status": "saturated_for_closed_corpus"
-      },
-      "status": "done",
-      "updated_at": 1790605694
+      "status": "ready"
     }
   ]
 }
