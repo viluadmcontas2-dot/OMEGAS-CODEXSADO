@@ -1,0 +1,10 @@
+{
+  "closure_rule": "all mandatory WorkUnits complete; unresolved fields remain explicit UNKNOWN",
+  "protocol_status": "saturated_for_closed_corpus",
+  "remaining_unknowns": [
+    "ECU-side command semantics",
+    "unobserved firmware branches",
+    "physical validation"
+  ],
+  "status": "done"
+}

@@ -1,0 +1,18 @@
+{
+  "autocalibration": {
+    "abort_conditions": "UNKNOWN",
+    "calculation": "UNKNOWN",
+    "evidence": [
+      "WU-002",
+      "WU-003",
+      "WU-006",
+      "WU-007",
+      "WU-008"
+    ],
+    "inputs": "UNKNOWN",
+    "persistence": "UNKNOWN",
+    "preconditions": "UNKNOWN"
+  },
+  "automaticWrite": false,
+  "status": "done"
+}

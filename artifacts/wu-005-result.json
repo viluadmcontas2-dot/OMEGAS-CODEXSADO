@@ -1,6 +1,6 @@
 {
   "closure": {
-    "protocol_status": "saturated_for_closed_corpus",
+    "protocol_status": "open_pending_deep_protocol_workunits",
     "remaining_unknowns": [
       "ECU-side byte semantics",
       "physical timing outside Portmon capture",
