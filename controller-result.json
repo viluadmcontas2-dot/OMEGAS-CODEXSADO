@@ -5,12 +5,20 @@
   },
   "executed": [
     {
-      "id": "WU-011",
+      "id": "WU-009",
       "result": {
-        "artifact": "artifacts/wu-011-result.json",
-        "files": 174
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
       },
-      "status": "done"
+      "status": "ready"
     },
     {
       "id": "WU-009",
@@ -161,5 +169,5 @@
     "done": 9,
     "ready": 2
   },
-  "timestamp": 1790611851
+  "timestamp": 1790611879
 }
