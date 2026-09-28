@@ -3,11 +3,18 @@
   "workunits": [
     {
       "acceptance": "All five corpus roots are present with SHA-256, size, and ZIP inventory captured without unsafe extraction.",
+      "attempts": 1,
+      "claimed_at": 1790605018,
       "depends_on": [],
       "id": "WU-001",
       "method": "Manifest local/private corpus and write reproducible evidence manifest.",
       "question": "What exact evidence corpus is available to the runners?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-001-result.json",
+        "files": 5
+      },
+      "status": "done",
+      "updated_at": 1790605018
     },
     {
       "acceptance": "Static file types, PE metadata, resource inventory, imports, strings index, and PLE headers are reported with offsets and tool versions.",

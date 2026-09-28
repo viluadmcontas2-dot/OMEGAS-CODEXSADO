@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "name": "Resources.dll",
+      "path": "corpus/private/Resources.dll",
+      "sha256": "8c6b629cf1d69e13074ea8fd3203d48343d002a2ffc5503f20b6ce10ec564b15",
+      "size": 3289600
+    },
+    {
+      "name": "ProgBase.exe",
+      "path": "corpus/private/ProgBase.exe",
+      "sha256": "8a2d297c8c21ff3b4f7a47f7fe64593b0fec9014dd938bd91022dc0c68ac36f4",
+      "size": 12643840
+    },
+    {
+      "name": "EVO_L_#00567.ple",
+      "path": "corpus/private/EVO_L_#00567.ple",
+      "sha256": "3938fcc9f1cc3d49338eb91174fe6e2743c84140d8c2926ebb34d222a28d18cb",
+      "size": 215192
+    },
+    {
+      "name": "EVO_#01160.ple",
+      "path": "corpus/private/EVO_#01160.ple",
+      "sha256": "427ecf133ec8d099c4b3c154a5bdc79c891963863c61f449a92db50f12813b0b",
+      "size": 247532
+    },
+    {
+      "name": "PortmonLOGNOVO (1).zip",
+      "path": "corpus/private/PortmonLOGNOVO (1).zip",
+      "sha256": "6879fa2a7931d22c207cd7fa47dffb59e1df0fe1de216e34e3f11e0c08cc1c17",
+      "size": 14170842,
+      "zip_inventory": {
+        "expanded_size": 149911521,
+        "max_expanded_bytes": 536870912,
+        "members": [
+          {
+            "compressed_size": 14170692,
+            "crc32": "e1c93dc3",
+            "kind": "file",
+            "name": "PortmonLOGNOVO.LOG",
+            "size": 149911521
+          }
+        ],
+        "path": "corpus/private/PortmonLOGNOVO (1).zip",
+        "safe": true
+      }
+    }
+  ],
+  "generated_at": 1790605018,
+  "schema": "omegas-reverse-corpus-manifest-v1"
+}
