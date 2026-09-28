@@ -5,4 +5,6 @@ artifacts/private/
 artifacts/local-corpus-manifest.json
 artifacts/dryrun/
 artifacts/dryrun-workunits.json
+artifacts/test-run/
+artifacts/test-state.json
 *.log

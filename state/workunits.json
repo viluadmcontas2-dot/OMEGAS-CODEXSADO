@@ -46,6 +46,16 @@
       "method": "Cross-reference UI/code/log evidence; no ECU operations.",
       "question": "What can be proven about autocalibration responsibility and state transitions?",
       "status": "ready"
+    },
+    {
+      "acceptance": "A deterministic offline simulator contract, replay format, safety gate, and mobile integration boundary are documented from the evidence graph.",
+      "depends_on": [
+        "WU-004"
+      ],
+      "id": "WU-005",
+      "method": "Generate a replay-only simulator specification; no transport, ECU write, or automatic calibration command.",
+      "question": "What can an independent app safely reproduce from the proven evidence?",
+      "status": "ready"
     }
   ]
 }

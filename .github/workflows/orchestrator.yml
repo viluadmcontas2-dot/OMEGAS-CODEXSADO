@@ -6,7 +6,7 @@ on:
       max_units:
         description: "Maximum WorkUnits to execute in this cycle"
         required: false
-        default: "1"
+        default: "10"
   repository_dispatch:
     types: [omegas_reverse_continue]
   schedule:
@@ -38,7 +38,7 @@ jobs:
       - name: Run one bounded controller cycle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_UNITS: ${{ github.event.inputs.max_units || '1' }}
+          MAX_UNITS: ${{ github.event.inputs.max_units || '10' }}
         run: |
           python -m reverse_lab.controller \
             --state-path state/workunits.json \
