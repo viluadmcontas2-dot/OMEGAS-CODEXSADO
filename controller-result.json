@@ -1,45 +1,11 @@
 {
   "continuation": {
-    "dispatched": true,
-    "returncode": 0,
-    "stderr": ""
+    "dispatched": false,
+    "reason": "disabled"
   },
-  "executed": [
-    {
-      "id": "WU-002",
-      "result": {
-        "artifact": "artifacts/wu-002-result.json",
-        "files": 4
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-003",
-      "result": {
-        "artifact": "artifacts/wu-003-result.json",
-        "lines": 2631711
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-004",
-      "result": {
-        "artifact": "artifacts/wu-004-result.json",
-        "claims": 3
-      },
-      "status": "done"
-    },
-    {
-      "id": "WU-005",
-      "result": {
-        "artifact": "artifacts/wu-005-result.json",
-        "protocol_status": "saturated_for_closed_corpus"
-      },
-      "status": "done"
-    }
-  ],
+  "executed": [],
   "state_counts": {
     "done": 5
   },
-  "timestamp": 1790605348
+  "timestamp": 1790605363
 }
