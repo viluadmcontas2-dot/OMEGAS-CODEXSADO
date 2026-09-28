@@ -1,8 +1,7 @@
 {
   "continuation": {
-    "dispatched": true,
-    "returncode": 0,
-    "stderr": ""
+    "dispatched": false,
+    "reason": "disabled"
   },
   "executed": [
     {
@@ -170,5 +169,5 @@
     "done": 8,
     "ready": 2
   },
-  "timestamp": 1790606168
+  "timestamp": 1790606530
 }
