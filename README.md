@@ -2,7 +2,7 @@
 
 Offline, evidence-bound interoperability investigation for Landi Renzo Omegas artifacts.
 
-The repository is a public orchestration scaffold and does not version the proprietary corpus or its local manifest. The runners operate from a durable WorkUnit state file and stop with explicit blockers when the corpus is absent or when a question is saturated.
+The repository is private and contains the authorized investigation corpus plus its local manifest. The runners operate from a durable WorkUnit state file and stop with explicit blockers when the corpus is absent or when a question is saturated.
 
 ## Rules
 
