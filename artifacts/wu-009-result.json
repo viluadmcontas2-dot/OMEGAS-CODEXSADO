@@ -15,7 +15,7 @@
     "WU-008"
   ],
   "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim",
-  "pass": 961,
+  "pass": 971,
   "status": "incomplete",
   "unresolved": [
     "preconditions",
