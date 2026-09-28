@@ -141,8 +141,8 @@
     },
     {
       "acceptance": "Every autocalibration field is OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN and automaticWrite remains false.",
-      "attempts": 1,
-      "claimed_at": 1790605694,
+      "attempts": 11,
+      "claimed_at": 1790606042,
       "depends_on": [
         "WU-004",
         "WU-007",
@@ -151,7 +151,20 @@
       "id": "WU-009",
       "method": "Join routine, command, frame, and static evidence into an evidence-indexed responsibility map.",
       "question": "Which autocalibration routines and consumers are proven or unknown?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready",
+      "updated_at": 1790606042
     },
     {
       "acceptance": "Protocol closes only after WU-001 through WU-009 are done and every unknown is explicit.",

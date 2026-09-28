@@ -1,11 +1,174 @@
 {
   "continuation": {
-    "dispatched": false,
-    "reason": "disabled"
+    "dispatched": true,
+    "returncode": 0,
+    "stderr": ""
   },
-  "executed": [],
+  "executed": [
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "WU-009",
+      "result": {
+        "artifact": "artifacts/wu-009-result.json",
+        "retryable": true,
+        "status": "retry_required",
+        "unresolved": [
+          "preconditions",
+          "inputs",
+          "calculation",
+          "persistence",
+          "abort_conditions"
+        ]
+      },
+      "status": "ready"
+    }
+  ],
   "state_counts": {
-    "done": 10
+    "done": 8,
+    "ready": 2
   },
-  "timestamp": 1790605993
+  "timestamp": 1790606042
 }

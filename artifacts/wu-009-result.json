@@ -2,17 +2,25 @@
   "autocalibration": {
     "abort_conditions": "UNKNOWN",
     "calculation": "UNKNOWN",
-    "evidence": [
-      "WU-002",
-      "WU-003",
-      "WU-006",
-      "WU-007",
-      "WU-008"
-    ],
     "inputs": "UNKNOWN",
     "persistence": "UNKNOWN",
     "preconditions": "UNKNOWN"
   },
   "automaticWrite": false,
-  "status": "done"
+  "evidence": [
+    "WU-002",
+    "WU-003",
+    "WU-006",
+    "WU-007",
+    "WU-008"
+  ],
+  "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim",
+  "status": "incomplete",
+  "unresolved": [
+    "preconditions",
+    "inputs",
+    "calculation",
+    "persistence",
+    "abort_conditions"
+  ]
 }
