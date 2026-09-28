@@ -45,7 +45,7 @@ jobs:
             --corpus-root corpus/private \
             --artifacts-root artifacts \
             --max-units "$MAX_UNITS" \
-            --auto-dispatch | tee controller-result.json
+            | tee controller-result.json
       - name: Commit durable state
         run: |
           git config user.name "omegas-reverse-runner"
@@ -56,4 +56,16 @@ jobs:
           else
             git commit -m "chore: record orchestrator checkpoint"
             git push
+          fi
+      - name: Continue after durable checkpoint
+        if: ${{ success() }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if grep -q '"status": "ready"' state/workunits.json; then
+            gh api "repos/${GITHUB_REPOSITORY}/dispatches" --method POST --input - <<'JSON'
+            {"event_type":"omegas_reverse_continue","client_payload":{"source":"post_checkpoint"}}
+            JSON
+          else
+            echo "No ready WorkUnit remains; remote protocol gate is closed or blocked."
           fi
