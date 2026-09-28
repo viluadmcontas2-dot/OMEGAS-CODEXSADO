@@ -141,8 +141,8 @@
     },
     {
       "acceptance": "Every autocalibration field is OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN and automaticWrite remains false.",
-      "attempts": 1231,
-      "claimed_at": 1790609935,
+      "attempts": 1241,
+      "claimed_at": 1790609965,
       "depends_on": [
         "WU-004",
         "WU-007",
@@ -164,7 +164,7 @@
         ]
       },
       "status": "ready",
-      "updated_at": 1790609935
+      "updated_at": 1790609965
     },
     {
       "acceptance": "Protocol closes only after WU-001 through WU-009 are done and every unknown is explicit.",
