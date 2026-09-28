@@ -1,0 +1,33 @@
+name: WorkUnit
+description: Evidence-bound OMEGAS reverse investigation unit
+title: "WU: "
+labels: ["workunit", "evidence"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The exact technical question this WorkUnit answers.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Inputs and Hashes
+      description: Corpus files, hashes, offsets, logs, and prior WorkUnits.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: Reproducible offline commands and limits.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: What evidence must exist before this WorkUnit can close.
+    validations:
+      required: true

@@ -1,0 +1,44 @@
+{
+  "schema": "omegas-reverse-workunits-v1",
+  "workunits": [
+    {
+      "acceptance": "All five corpus roots are present with SHA-256, size, and ZIP inventory captured without unsafe extraction.",
+      "depends_on": [],
+      "id": "WU-001",
+      "method": "Manifest local/private corpus and write reproducible evidence manifest.",
+      "question": "What exact evidence corpus is available to the runners?",
+      "status": "ready"
+    },
+    {
+      "acceptance": "Static file types, PE metadata, resource inventory, imports, strings index, and PLE headers are reported with offsets and tool versions.",
+      "depends_on": [
+        "WU-001"
+      ],
+      "id": "WU-002",
+      "method": "Offline static triage only; no binary execution.",
+      "question": "What are the real formats and immediately observable structures?",
+      "status": "ready"
+    },
+    {
+      "acceptance": "Portmon sessions are inventoried and raw direction/timing/byte records are preserved with segmentation hypotheses kept separate.",
+      "depends_on": [
+        "WU-001"
+      ],
+      "id": "WU-003",
+      "method": "Parse extracted Portmon artifacts after safe ZIP inventory.",
+      "question": "What communication sessions and byte flows exist in the logs?",
+      "status": "ready"
+    },
+    {
+      "acceptance": "Autocalibration claims are cataloged as OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN with stable evidence IDs.",
+      "depends_on": [
+        "WU-002",
+        "WU-003"
+      ],
+      "id": "WU-004",
+      "method": "Cross-reference UI/code/log evidence; no ECU operations.",
+      "question": "What can be proven about autocalibration responsibility and state transitions?",
+      "status": "ready"
+    }
+  ]
+}

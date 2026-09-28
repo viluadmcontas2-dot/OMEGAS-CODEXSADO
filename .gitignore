@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+corpus/
+evidence_raw/
+artifacts/private/
+artifacts/local-corpus-manifest.json
+artifacts/dryrun/
+artifacts/dryrun-workunits.json
+*.log
