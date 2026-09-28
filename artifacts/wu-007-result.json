@@ -1,0 +1,31 @@
+{
+  "routine_catalog": [
+    {
+      "confidence": "OBSERVED",
+      "consumer": "ProgBase.exe",
+      "end": "IRP_MJ_CLOSE",
+      "routine_id": "RT-SERIAL-OPEN",
+      "trigger": "IRP_MJ_CREATE"
+    },
+    {
+      "confidence": "OBSERVED",
+      "consumer": "ProgBase.exe",
+      "end": "configuration acknowledged",
+      "routine_id": "RT-SERIAL-CONFIGURE",
+      "trigger": "IOCTL_SERIAL_SET_BAUD_RATE/SET_LINE_CONTROL"
+    },
+    {
+      "confidence": "DERIVED",
+      "consumer": "unknown parser",
+      "end": "read, success or timeout",
+      "routine_id": "RT-REQUEST-RESPONSE",
+      "trigger": "IRP_MJ_WRITE"
+    }
+  ],
+  "status": "done",
+  "unresolved": [
+    "symbol-level caller/callee graph",
+    "UI handler mapping",
+    "ECU response parser identity"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "confidence": "STRUCTURE_OBSERVED_SEMANTICS_UNKNOWN",
+  "fields": [
+    "device",
+    "operation",
+    "length",
+    "bytes",
+    "timestamp",
+    "result"
+  ],
+  "frames": "candidate frame records from WU-006",
+  "start_end_rules": {
+    "end": "close, timeout cluster, or session boundary",
+    "start": "serial open or first write"
+  },
+  "status": "done"
+}
