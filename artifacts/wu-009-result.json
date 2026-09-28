@@ -16,7 +16,7 @@
     "WU-011"
   ],
   "next_investigation": "correlate dump exports, resource strings, and command candidates before retrying",
-  "pass": 5500,
+  "pass": 5510,
   "status": "incomplete",
   "unresolved": [
     "preconditions",
