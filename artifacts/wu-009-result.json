@@ -12,10 +12,11 @@
     "WU-003",
     "WU-006",
     "WU-007",
-    "WU-008"
+    "WU-008",
+    "WU-011"
   ],
-  "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim",
-  "pass": 1871,
+  "next_investigation": "correlate dump exports, resource strings, and command candidates before retrying",
+  "pass": 1880,
   "status": "incomplete",
   "unresolved": [
     "preconditions",

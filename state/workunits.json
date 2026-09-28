@@ -141,8 +141,8 @@
     },
     {
       "acceptance": "Every autocalibration field is OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN and automaticWrite remains false.",
-      "attempts": 1871,
-      "claimed_at": 1790611811,
+      "attempts": 1880,
+      "claimed_at": 1790611851,
       "depends_on": [
         "WU-004",
         "WU-007",
@@ -165,7 +165,7 @@
         ]
       },
       "status": "ready",
-      "updated_at": 1790611811
+      "updated_at": 1790611851
     },
     {
       "acceptance": "Protocol closes only after WU-001 through WU-009 are done and every unknown is explicit.",
@@ -182,11 +182,20 @@
     },
     {
       "acceptance": "Every additional file has path, size, SHA-256, type and text metadata where applicable.",
-      "depends_on": ["WU-001"],
+      "attempts": 1,
+      "claimed_at": 1790611851,
+      "depends_on": [
+        "WU-001"
+      ],
       "id": "WU-011",
       "method": "Inventory and hash the additional LANDIXP executable and remote DUMP tree.",
       "question": "What additional routines, exports, resources, strings, dumps, and patches are available?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-011-result.json",
+        "files": 174
+      },
+      "status": "done",
+      "updated_at": 1790611851
     }
   ]
 }

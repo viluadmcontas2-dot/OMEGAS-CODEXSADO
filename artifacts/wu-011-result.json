@@ -1,0 +1,1144 @@
+{
+  "file_count": 174,
+  "files": [
+    {
+      "path": "ProgBase.LANDIXP.exe",
+      "sha256": "8a2d297c8c21ff3b4f7a47f7fe64593b0fec9014dd938bd91022dc0c68ac36f4",
+      "size": 12643840,
+      "suffix": ".exe"
+    },
+    {
+      "path": "dump/257_10010_1040.bin",
+      "sha256": "c706e57aad95370118950c463f7710c412363c866c219a16d2f476f3c3963a76",
+      "size": 149018,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/257_10011_1040.bin",
+      "sha256": "5d81338178d8572adbdcbc33a90056e32eba4b1f9c7343a3fa0c17407569950e",
+      "size": 124186,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/257_10012_1040.bin",
+      "sha256": "39d99bf77cf0b0259d713edee2a8bb21284260db451a7212ae45ba6dae3209fc",
+      "size": 287926,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/257_9999_1040.bin",
+      "sha256": "cf1f1075eb63e55d70378421cc3d6eb90b5cc78941061dd7b99523fd9511243e",
+      "size": 23651,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/ProgBase.exe.Dump.bin",
+      "sha256": "8a2d297c8c21ff3b4f7a47f7fe64593b0fec9014dd938bd91022dc0c68ac36f4",
+      "size": 12643840,
+      "suffix": ".bin"
+    },
+    {
+      "lines": 8,
+      "path": "dump/ProgBase.exe.Dump.bin.patch.json",
+      "samples": [
+        "[",
+        "    {",
+        "        \"filename\": \"G:/Meu Drive/OMEGAS/DUMP/ProgBase.exe.Dump.bin\",",
+        "        \"offset\": 0,",
+        "        \"size\": 12643840",
+        "    }",
+        "]"
+      ],
+      "sha256": "64e043be9aa75e79ad380da0a9a302e38e3e18f0d193e8602dda05654d58bd4d",
+      "size": 132,
+      "suffix": ".json"
+    },
+    {
+      "path": "dump/ProgBase.exe.Dump1.bin",
+      "sha256": "8a2d297c8c21ff3b4f7a47f7fe64593b0fec9014dd938bd91022dc0c68ac36f4",
+      "size": 12643840,
+      "suffix": ".bin"
+    },
+    {
+      "lines": 8,
+      "path": "dump/ProgBase.exe.Dump1.bin.patch.json",
+      "samples": [
+        "[",
+        "    {",
+        "        \"filename\": \"G:/Meu Drive/OMEGAS/DUMP/ProgBase.exe.Dump1.bin\",",
+        "        \"offset\": 0,",
+        "        \"size\": 12643840",
+        "    }",
+        "]"
+      ],
+      "sha256": "f9924792246ea9eb2f1286c73da4ae5dbaf47cf71ca5dd6b688a360fab32b212",
+      "size": 133,
+      "suffix": ".json"
+    },
+    {
+      "path": "dump/ProgBase.exe.Entropia.png",
+      "sha256": "baa3021dbcebe20403ac81bd7076cc98ec128a42f18010a20f1b6e5db5a36bb5",
+      "size": 8757,
+      "suffix": ".png"
+    },
+    {
+      "lines": 1313,
+      "path": "dump/ProgBase.exe.ExportFunctions.txt",
+      "samples": [
+        "Ordinal\tRVA\tName\t",
+        "0001\t00002919\t0084cbfa\t__GetExceptDLLinfo",
+        "0002\t00007c50\t0084100a\t@@Cryptengine@Initialize",
+        "0003\t00007c60\t00840ff3\t@@Cryptengine@Finalize",
+        "0004\t00009b80\t00841351\t@@Licensemanager@Initialize",
+        "0005\t00009b90\t00841337\t@@Licensemanager@Finalize",
+        "0006\t00012410\t00840c8b\t@@Aggkey@Initialize",
+        "0007\t00012420\t00840c79\t@@Aggkey@Finalize",
+        "0008\t000131a8\t00840e1e\t@@Calibraswitch@Initialize",
+        "0009\t000131b8\t00840e05\t@@Calibraswitch@Finalize"
+      ],
+      "sha256": "0a33ca0938c77ed9694cef117a4f53ef19066679461a23e6d38da440c2eacf87",
+      "size": 81542,
+      "suffix": ".txt"
+    },
+    {
+      "lines": 515,
+      "path": "dump/ProgBase.exe.Resources_StringTable.txt",
+      "samples": [
+        "#\tId\tIdioma\tString",
+        "0\t65024\t0\tThe chunks must be compatible to be assigned.",
+        "1\t65025\t0\tThis \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file.",
+        "10\t65034\t0\tThe \"Portable Network Graphics\" could not be created because invalid image type parameters have being provided.",
+        "100\t65129\t0\tRadioButton%d",
+        "101\t65130\t0\tCaption cannot be empty",
+        "102\t65131\t0\tCategoryPanel must have a CategoryPanelGroup as its parent",
+        "103\t65132\t0\tOnly CategoryPanels can be inserted into"
+      ],
+      "sha256": "03ae155868208191d6eeb58639ad529999c91c3f932a47b53167137396edd787",
+      "size": 21293,
+      "suffix": ".txt"
+    },
+    {
+      "lines": 11,
+      "path": "dump/ProgBase.exe.Se\u00e7\u00f5es.txt",
+      "samples": [
+        "#\tName\tVirtualSize\tVirtualAddress\tSizeOfRawData\tPointerToRawData\tPointerToRelocations\tPointerToLinenumbers\tNumberOfRelocations\tNumberOfLinenumbers\tCharacteristics",
+        "0\t.text\t00650000\t00001000\t0064fe00\t00000600\t00000000\t00000000\t0000\t0000\t60000020",
+        "1\t.data\t001e4000\t00651000\t0009be00\t00650400\t00000000\t00000000\t0000\t0000\tc0000040",
+        "2\t.tls\t00001000\t00835000\t00000200\t006ec200\t00000000\t00000000\t0000\t0000\tc0000040",
+        "3\t.rdata\t00001000\t00836000\t00000200\t006ec400\t00000000\t00000000\t0000\t0000\t50000040",
+        "4\t.idata\t0000"
+      ],
+      "sha256": "ccd90dee24ce72815b07448a1c754e9e823292c172286f06dd7e5dee3b110f4b",
+      "size": 897,
+      "suffix": ".txt"
+    },
+    {
+      "lines": 175328,
+      "path": "dump/ProgBase.exe.Stri4ngs.txt",
+      "samples": [
+        "#\tOffset\tEndere\u00e7o\tRegi\u00e3o\tTamanho\tInfo\tString",
+        "0\t00000050\t00400050\tCabe\u00e7alho (Header)\t24\tA\tThis program must be run under Win32",
+        "1\t000002f8\t004002f8\tCabe\u00e7alho (Header)\t5\tA\t.text",
+        "2\t0000031f\t0040031f\tCabe\u00e7alho (Header)\t6\tA\t`.data",
+        "3\t00000370\t00400370\tCabe\u00e7alho (Header)\t6\tA\t.rdata",
+        "4\t00000397\t00400397\tCabe\u00e7alho (Header)\t7\tA\tP.idata",
+        "5\t000003bf\t004003bf\tCabe\u00e7alho (Header)\t8\tA\t@.didata",
+        "6\t000003e8\t004003e8\tCabe\u00e7alho (Header)\t6\tA\t.edata",
+        "7\t0000040f\t0040040f\tCabe\u00e7alho (Header)\t6\tA\t@.rsrc",
+        "8\t00000437\t00"
+      ],
+      "sha256": "03784bdf5f9474cb78a4541b4ec03cfa3e88159e1ae54aa0293105eaa823c7c7",
+      "size": 11796863,
+      "suffix": ".txt"
+    },
+    {
+      "lines": 175328,
+      "path": "dump/ProgBase.exe.String5s.txt",
+      "samples": [
+        "#\tOffset\tEndere\u00e7o\tRegi\u00e3o\tTamanho\tInfo\tString",
+        "0\t00000050\t00400050\tCabe\u00e7alho (Header)\t24\tA\tThis program must be run under Win32",
+        "1\t000002f8\t004002f8\tCabe\u00e7alho (Header)\t5\tA\t.text",
+        "2\t0000031f\t0040031f\tCabe\u00e7alho (Header)\t6\tA\t`.data",
+        "3\t00000370\t00400370\tCabe\u00e7alho (Header)\t6\tA\t.rdata",
+        "4\t00000397\t00400397\tCabe\u00e7alho (Header)\t7\tA\tP.idata",
+        "5\t000003bf\t004003bf\tCabe\u00e7alho (Header)\t8\tA\t@.didata",
+        "6\t000003e8\t004003e8\tCabe\u00e7alho (Header)\t6\tA\t.edata",
+        "7\t0000040f\t0040040f\tCabe\u00e7alho (Header)\t6\tA\t@.rsrc",
+        "8\t00000437\t00"
+      ],
+      "sha256": "03784bdf5f9474cb78a4541b4ec03cfa3e88159e1ae54aa0293105eaa823c7c7",
+      "size": 11796863,
+      "suffix": ".txt"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBABORT__1033.bin",
+      "sha256": "c0ede68a98bd2bc58c78564dfb42f1640dc29766d3ab2782ab8b5ed28c6fd414",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBALL__1033.bin",
+      "sha256": "46cfc44afa8ab31ae3da35fa8346e4c085c441659d9992b09fc8ad517f2b289a",
+      "size": 484,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBCANCEL__1033.bin",
+      "sha256": "c0ede68a98bd2bc58c78564dfb42f1640dc29766d3ab2782ab8b5ed28c6fd414",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBCLOSE__1033.bin",
+      "sha256": "f8e1696801fe89b88936ac4226cea03bfa5aa345aa33ca982822ae7fbc6557e2",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBHELP__1033.bin",
+      "sha256": "cb7421b5c6af74c3159c361f3bb78bba8a488d8979d1250e106fa96cbf928789",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBIGNORE__1033.bin",
+      "sha256": "41f05a4df5f42d92b879493d51941de342d36460fe15c0f3b63b2b706b928fef",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBNO__1033.bin",
+      "sha256": "81265e63c89ee5c2e5126452e22f84e9be9452449f3e5959ab6d346cb58b2bde",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBOK__1033.bin",
+      "sha256": "6b97877cdd547e6ba6467f86055f1fc7b06660b034439f0da4c137538ef14a83",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBRETRY__1033.bin",
+      "sha256": "c925e4a8cbf6d42dbb1220a510614df725558f8d843338982bab8c4e020f6429",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__BBYES__1033.bin",
+      "sha256": "6b97877cdd547e6ba6467f86055f1fc7b06660b034439f0da4c137538ef14a83",
+      "size": 464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEB3DMAP__1040.bin",
+      "sha256": "8065c616f8697f0bb8d923959d121911ea4447738efdc306ca580f8b2873138c",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBCHECKBOX__1040.bin",
+      "sha256": "38b699f36ae2d9762c2ad1efcfa11b609e1fd5cc499015f7594b82cb763cef18",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBCOMBOBOX__1040.bin",
+      "sha256": "adbd5fec173bf6197aeaa6d27fe775a72c34ae0c6e55c63c6bcf8c55918896fb",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBCONNECTION__1040.bin",
+      "sha256": "eda66d6462f385905be021e39df5f01e4419239b88c1aae6c8e53a4fd399dac9",
+      "size": 1768,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBDATALIST__1040.bin",
+      "sha256": "0d478d136913c6b3f5441f948763b85b08ee3d9a01a1851bb504c25e8ccc1930",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBGRID__1040.bin",
+      "sha256": "98fb227387c3ab5f5988659980247c0806ff9d47c6f9cc5d51aac9e0f56a5d78",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBGROUPBOX__1040.bin",
+      "sha256": "1ac4236b6be0a1318da349f3629fafe35cb5802d2e36ab6bbe4e8a5ea607c978",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBLABELEDEDIT__1040.bin",
+      "sha256": "aa50ccf57aa16a094544e8fb0aed5a16885959b5461112d61763474659d6ea03",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBLABEL__1040.bin",
+      "sha256": "b159e1ee33bef8235994c948de855f5414bf867ccd9d8d8293033ce74df81be4",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBMATRIX__1040.bin",
+      "sha256": "f428d9d2fec310ea59c4b6062f900c9520123575b48b02ac5c9ddd42eaf5beba",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBMSCONNECTION__1040.bin",
+      "sha256": "95670d2e6332548af15c1279d8f16966c2d51f256c8a0e836d6168805abb0b5b",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBNUMBER__1040.bin",
+      "sha256": "b289baac5967fa2b91779da86b0b4e900715646742a4f58089af20a31417bd52",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBPACKETDATA__1040.bin",
+      "sha256": "3045fdf3163c06093a20e3b803f0f8b67bff1041cb0a490d5f036476e9959ba0",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBPROTOCOL__1040.bin",
+      "sha256": "90c101321a12025577fea3ecdd62b51fc6098a3ebc3f78a8ddcc49a5ee50eb6c",
+      "size": 1768,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBRADIOGROUP__1040.bin",
+      "sha256": "2d4283ab37fe462b3e0c6b105ed4cfe42e9370de563bf69778b74d01f0e1ae58",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBREGISTRYDATA__1040.bin",
+      "sha256": "5e59c8b533ab44240bbc51e058c351021dff3c2b873b1d8e602621085a641e01",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBRICHEDIT__1040.bin",
+      "sha256": "6a51f83d842b1cffe939c843f2a12d05d867fd335278553eacc79e5ebfbbf610",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBSCROLLBOX__1040.bin",
+      "sha256": "c220c08522a08d65246fc45a033bdbac9476feb76932e6e1172e9026a8a14802",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBVECTORITEMS__1040.bin",
+      "sha256": "abc998acf3065f68d896cc336dac03c90b0f6187410efb49eed56eb1553c4919",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TAEBVECTOR__1040.bin",
+      "sha256": "311b11f5fb3b1f0e6f9f6738a9a169eed3c68e630a16bb638818c1c209489a13",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TBUTTONCOLOR__1033.bin",
+      "sha256": "85938f507acdd0cb9b89ea43961718ed7a1038ac616f2dddad888565854d6260",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TBUTTONGRADIENT__1033.bin",
+      "sha256": "3a3a04251c5b260aa0d63f75fdf0a77f349ac415be3b8e3e7b7c2662d99f4b6b",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TBUTTONPEN__1033.bin",
+      "sha256": "c42268a7af35e0c31f124ec247f89a4184c962e1099e0ae3a27dbf49d39c428d",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TCOMBOFLAT__1033.bin",
+      "sha256": "2809c78bfe309fb06f15abd83fbf998584e97f6c703effa31dd230d6b1c832c5",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TCOMPONENTRESIZER__1040.bin",
+      "sha256": "a0dd36bd0db9ff636de15d0ea1e5bf0647d163459483fa39595cde60d3293ce6",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TCUSTOMTRANSFORMATION__1040.bin",
+      "sha256": "67bb2a82129e4aaf141e9a344a1aa2528d1984691b8a60052d27b09c1b198796",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TDATAREFRESHER__1040.bin",
+      "sha256": "478095fb1cccf55cad0fe1033491caea8495fb3c1ed3b477d177cc39f5e44611",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TEDITEX__1040.bin",
+      "sha256": "7dedec887aef66a680321d1298037022228a1004a492ed536ab5e9fef7befe16",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TEEARROWDOWN__1033.bin",
+      "sha256": "724bfa4eeff4d9388b5239419572cbfe1fa3e4f8f8ddf9e8fe9fbd23a46c6a92",
+      "size": 272,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TEEARROWUP__1033.bin",
+      "sha256": "9ae0ab3512ae9eb7ed68234ab1dabf3982f3ee02f73c2c9e3b2420fe85d48354",
+      "size": 272,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TIMAGEFILTERED__1033.bin",
+      "sha256": "4f21beb761c9c703dc9c521873b4f149e4b0588d57448522389212f0f42818f4",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TLINEARTRANSFORMATION__1040.bin",
+      "sha256": "5e838d482165abcb49826bdb0b879741d44e7ab08b3d5f524327a338b629a7a0",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TNUMERICEDITEX__1040.bin",
+      "sha256": "f13cc40b25099fd486f4d1c5cbdfdaa18f3c23127a5c6944554b88fc173ac34f",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TPDF__0.bin",
+      "sha256": "adaa9a0d22053a383888e2403f15ce0039f53108e6b752c4c19f55ef69819a05",
+      "size": 224,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TTEEINSPECTOR__1033.bin",
+      "sha256": "8ca817a8ca54ded7dd4bb74b31888cb79fe29926ada5383b3bed5e8b02f86164",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TTEEPREVIEWPANEL__1033.bin",
+      "sha256": "f95e44be016f37095500435a04d117066523370645333d0217a5b106bd8d39f5",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TTRANSLATOR__1040.bin",
+      "sha256": "b9bb7da0c09cb6e6b5101132f9c2b10a9c850a6cbe4a3d5b2bfb0a5725475d40",
+      "size": 1640,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_BITMAP(2)__TVALUEEDITEX__1040.bin",
+      "sha256": "0a09ddf5b22eb3e24a225ad0c6bffa6ee93825cc0757fb77c91450c2bf055dd6",
+      "size": 2392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_1_1033.bin",
+      "sha256": "30df4ddb7d7ff020b05c161b16bafa7002c89871d8b05d132b9c06af0a21b693",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_2_1033.bin",
+      "sha256": "ce19ace18e87b572e6912306776226af5b8e63959c61cde70a8ff05b3bbdcc41",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_3_1033.bin",
+      "sha256": "ee1c9c194199c320c893b367602ccc7ee7270bd4395d029f727e097634f47f8c",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_4_1033.bin",
+      "sha256": "9d9edf87ca203ecc60b246cc783d54218dd0ce77d3a025d0bafc580995a4abd8",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_5_1033.bin",
+      "sha256": "99676c52310db365580965ea646ece86c62951bfd97ec0aae9f738a202a90593",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_6_1033.bin",
+      "sha256": "11726dcf1eebe23a1df5eb0ee2af39196b702eddd69083d646e4475335130b28",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_7_1033.bin",
+      "sha256": "6f938aab0a03120de4ef8b27aff6ba5146226c92a056a6f04e5ec8d513ce5f9d",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_8_1033.bin",
+      "sha256": "ca5fb93e25c64373eed51defacb8e88516b47982465fc6f17ddc423fdf72a7c3",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_CURSOR(1)_9_1033.bin",
+      "sha256": "b8e6fc93d423931acbddae3c27dd3c4eb2a394005d746951a971cb700e0ee510",
+      "size": 308,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32761_1033.bin",
+      "sha256": "9c17b4621412d6ded24a76aed74d4425ae61f86b6d4092ca1e28ca66b7c71399",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32762_1033.bin",
+      "sha256": "b07e022f8ef0a8e5fd3f56986b2e5bf06df07054e9ea9177996b0a6c27d74d7c",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32763_1033.bin",
+      "sha256": "43f40dd5140804309a4c901ec3c85b54481316e67a6fe18beb9d5c0ce3a42c3a",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32764_1033.bin",
+      "sha256": "ff47a48c11c234903a7d625cb8b62101909f735ad84266c98dd4834549452c39",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32765_1033.bin",
+      "sha256": "a0adcedb82b57089f64e2857f97cefd6cf25f4d27eefc6648bda83fd5fef66bb",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32766_1033.bin",
+      "sha256": "6e1e7738a1b6373d8829f817915822ef415a1727bb5bb7cfe809e31b3c143ac5",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)_32767_1033.bin",
+      "sha256": "326c048595bbc72e3f989cb3b95fbf09dc83739ced3cb13eb6f03336f95d74f1",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)__CAT_DRAG_COPY__1033.bin",
+      "sha256": "c53efa8085835ba129c1909beaff8a67b45f50837707f22dfff0f24d8cd26710",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_GROUP_CURSOR(12)__TEE_CURSOR_HAND__1033.bin",
+      "sha256": "ec26c438d10e3e84ec855c47f07a176e6c11bbfae1557d526490711b80f087fe",
+      "size": 20,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__DVCLAL__0.bin",
+      "sha256": "e7dbe99baa5c1045cdf7004edb037018b2e0f639a5edcf800ec4514d5c8e35b5",
+      "size": 16,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__LANG_MAIN__1033.bin",
+      "sha256": "069a7760afb385febb3a1c7c553e1cd7733a7a076c867b4032b1fbae125b06bc",
+      "size": 1389592,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__PLATFORMTARGETS__1033.bin",
+      "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "size": 2,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TABOUTBOX__0.bin",
+      "sha256": "62bc34c2b9add5c89560073d80da1125ae634bfc39e459b5655eb4d1b658b104",
+      "size": 4952,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAEBBEEFORMLIGHT__0.bin",
+      "sha256": "dd1b3469e03b2a0f9c16bdd842be4a323b35b45bbc5efa39ccfbcdbba3ec3c62",
+      "size": 32758,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAUTOCALCOLORSETTINGS__0.bin",
+      "sha256": "1cc9fc2e6c73a52b435d83617971143c66344e6151cac5ce2ad42e79bfb8050f",
+      "size": 278351,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAUTOCALDM_EE__0.bin",
+      "sha256": "985db334af7211c5136404444131606445ef37831f9fe3ec0d512c81128d2a10",
+      "size": 6179,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAUTOCALDM__0.bin",
+      "sha256": "96ba3d934bf66593f919e22e37e2a90a171be5c765530e39d484ecfc16c1ee86",
+      "size": 14428,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAUTOCALSETTINGS__0.bin",
+      "sha256": "852de437e29e580936ff000aa49644289e455c1242d8ec9a64f35baa005e8f03",
+      "size": 59366,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TAUTOCALUI__0.bin",
+      "sha256": "449dda772b16b0d6a79c7bbd315754b37e4dbab26c129cb9346307daa2e954a7",
+      "size": 184604,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TEELCDFONT__1033.bin",
+      "sha256": "daff98854c366823b2b7c6530c55b3c9390610eec334e60ab76046215a3b3fa1",
+      "size": 267720,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TEELEDFONT__1033.bin",
+      "sha256": "87eb14d41eeeac0bd7fe0c62ece05134bbf1ee8059b6e3e701d7f4a7799506dc",
+      "size": 24448,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFFDATAMODULESINGLEARRAY__0.bin",
+      "sha256": "f886a9b975d84104eeaa3d47c404cf9d50aa058b8c73f7cde84059a5ad7d7b20",
+      "size": 1690,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMAGGKEY__0.bin",
+      "sha256": "160f5a171c8ead68eff7271f68bd9ad0cf22803c6cb3ab7b4c0573a0ad820bdb",
+      "size": 2072,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMATTESA__0.bin",
+      "sha256": "46f194ccff88ec4121d0205de8fb4c48ab8092147cd235dcdc8f6f774ecafdb7",
+      "size": 988,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMCALIBRA__0.bin",
+      "sha256": "fc50b61a74f0344fd30c8c426249877b1064d500729584fb1d857a509950fd55",
+      "size": 13159,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMCENTRICELLEK__0.bin",
+      "sha256": "e11be58cd4096186e52e6a53fd26a2e0e523a9dbc7a8e7c063047a74f270c7f2",
+      "size": 7616,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMCENTRICELLE__0.bin",
+      "sha256": "8e84c00a2ec48fa9d43f48cdc5f8913d554c758f385203499bef8493c76165a1",
+      "size": 7478,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMCONFIG__0.bin",
+      "sha256": "a09f4cb6780f1a9737b7ef2b2d0c3328640c34f092648fc96fe47b026afe80f0",
+      "size": 334188,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMCORRCALIBRA__0.bin",
+      "sha256": "7ad7f4080f4070a79fe1a383ee4dd20d262b16e6b1b227d5c82346f8515ea428",
+      "size": 3607,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMDIAGNOSI__0.bin",
+      "sha256": "8c0b54a8fc88bcc15eef3256c281759926b1171174bef119907bb42088403bc8",
+      "size": 38390,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMFILE__0.bin",
+      "sha256": "97af25f0f0f4fab1d23ff9c0caadd466f28d95abe2cf2e917612c76036ef0ef6",
+      "size": 63700,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMGESTIONETRACCE__0.bin",
+      "sha256": "f9380250cc8330e18779c6d287791d7e730dfce37b70dcb5e387b1d4773d2b0b",
+      "size": 804,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMGRAFICODRT__0.bin",
+      "sha256": "d220b1bdbc665c4fdb1d754e01c4d06070e7c72ed8fa067754ca2a3edd87d113",
+      "size": 4896,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMGRAFICOSCOPE__0.bin",
+      "sha256": "76fffb5bb969502aa85472c7ff5ba858d24de190a6b7a3dba7125f7fc6d42db8",
+      "size": 227164,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMHELPSCOPE__0.bin",
+      "sha256": "638c6b165d17cbcdf7ba28a040c79dac8bcd17d074f7358e96f2f7da1df39f96",
+      "size": 81025,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMLANDICONNECT__0.bin",
+      "sha256": "ffe232986b14675f2b2daa13c753b33b4c42b95ea28f15389b90b2c468e2784e",
+      "size": 690735,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMMAINBASE__0.bin",
+      "sha256": "c7db5a226b95a6a17b65dbf8008912b3947a3a276e99c775a11af3dceb9fbcb6",
+      "size": 301,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMMAIN__0.bin",
+      "sha256": "1a6fc2bd2e0446e2fcfd030a98ad495564936255cde389c16eb2f9d293b8f2b2",
+      "size": 88434,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMMESSAGGIO__0.bin",
+      "sha256": "f4999e4dab51d4d4180a7dea9a51382c9e3dddb6f4d798972f6a0be7d8d4cd77",
+      "size": 584,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMMODIFICAMAPPA__0.bin",
+      "sha256": "f94a16c4e8ff59ee157f3e0a6c3520e0d76ab410a9ff86423c91da77e13ae3b8",
+      "size": 806,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMMODMAPPA__0.bin",
+      "sha256": "32826f1d8a5329b343d3abe3edce9f7737c4c613a59b7472c9624d784b5db310",
+      "size": 1052,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMPDF__0.bin",
+      "sha256": "28f141245cab14f8961633836b963424d59cb91755d83d52dfb753ef75f6c4d3",
+      "size": 460,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMRIFAUTOCAL__0.bin",
+      "sha256": "52598aa3b6d4966167278dde5d35bedcb5eb90ecf47b12c5e0e0613d63a05e03",
+      "size": 11172,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMRIFERIMENTI__0.bin",
+      "sha256": "64d14ceb0905d3d6568927aeff9d98a6099f3908266300e9b567360954e488f7",
+      "size": 753,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMSCARICA__0.bin",
+      "sha256": "8722b32aad0341042c7671119c43fceb6c4931e76ec601dd2e74de33b62c0f5a",
+      "size": 1710,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMSERVICE__0.bin",
+      "sha256": "bff7a441631f233d0d0a1ccafa9cc87f9cc4e4610e7c1378d6fa04f2f1aa1e16",
+      "size": 7423,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMSPLASH__0.bin",
+      "sha256": "936d2f829291737cbfb7e307381aec06f9e51bea636e04af58f8e8be7689dd2b",
+      "size": 434,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMSTAMPA__0.bin",
+      "sha256": "0ebf8797c4d54604cf8b6239b4f8495725147ac8cc8bc4a8c28b0c8a91c79cf8",
+      "size": 392,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMSWITCH__0.bin",
+      "sha256": "c3223ff656525d037dbb84c6c6b90946b75bd80c8eb1730a55093a115b2c5e3a",
+      "size": 2338,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TFORMVISUALIZZA__0.bin",
+      "sha256": "a4f17519474258c01b3325666909f88d05db7a40f5bbd7c19d35c1a97df33e2f",
+      "size": 84613,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIAPANDADM_EE__0.bin",
+      "sha256": "6c0f63f93070ccd11f2de308e58a6cc0c69670b00e4958ef73a4576a6fc72dad",
+      "size": 82,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIAPANDADM__0.bin",
+      "sha256": "e4fde2c4f5cfdb2dc9b6f2de3bc79cbbf320c7856271e651ccd6d0da40cf764b",
+      "size": 7696,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIAPANDAUI__0.bin",
+      "sha256": "df0cd09f94b6c4607504a2b41fa81beb19188d4de998c9c5b8500ccef9e90d60",
+      "size": 17181,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIATEMPIMORTIDM_EE__0.bin",
+      "sha256": "4282ceffafa594c51ceffb2a784024dae563bfbd86971dcb7ab25b0627d55c8a",
+      "size": 92,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIATEMPIMORTIDM__0.bin",
+      "sha256": "7d95a63dfe34469e7bd3e371176b2c22f8934e097681fb89feb27c129a790fbc",
+      "size": 890,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTRATEGIATEMPIMORTIUI__0.bin",
+      "sha256": "41921479158fc5508d74f1624e8deb1d10e0940fdc299df6643497240f1627e5",
+      "size": 20601,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_RCDATA(10)__TSTREAMDATI__0.bin",
+      "sha256": "d55e310ec32e2154297c84ecc986f085647cd491c9d3ff2293c0de5b595b2250",
+      "size": 109011,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4065_0.bin",
+      "sha256": "2b4d068ab9f893797548a9dfa9cf2e9901ac3df1d93c6cdd4cc96b3ec9f87e7a",
+      "size": 1896,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4066_0.bin",
+      "sha256": "81f2f6e8e0cef1b5628dba13c6a8640c9559e971112c0fcfee0ca141631e3b79",
+      "size": 2696,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4067_0.bin",
+      "sha256": "e862152b9d8f10434fb32f5b8a9e12b31f29f6d35003fa7ff1992ab39c860ffa",
+      "size": 1068,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4068_0.bin",
+      "sha256": "6cac659233712eb95eef2b416fe163df0ebe4773c4b3bc7adc351a3f923cae3f",
+      "size": 1356,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4069_0.bin",
+      "sha256": "eea65f7b1a5a10d86cf22d28fa4bb84892db1b362302555fefc2e0b2d7680705",
+      "size": 1164,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4070_0.bin",
+      "sha256": "09d4b82a2796feafe7e2d6c7a53912d2705ea6e8bc2684c22a3fe232bf400849",
+      "size": 1000,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4071_0.bin",
+      "sha256": "adfa0ba032ba729e3a13b639ea8c966cd72bf283244d3da75b1e7abe58f358b9",
+      "size": 824,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4072_0.bin",
+      "sha256": "35a6685ea0d04effd37dbfb041d4dcb034edaf331bc3a4dd258397b4ff1404c3",
+      "size": 972,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4073_0.bin",
+      "sha256": "b9f27dbde7652d7e6ad046c5d4d50f8eda655b7d46c38d37593584d241e69555",
+      "size": 1112,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4074_0.bin",
+      "sha256": "69a3badca53d3c14b9e3137e39efd7d8ae27de7b05ea3720d5580ca5331859d5",
+      "size": 420,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4075_0.bin",
+      "sha256": "090e403667ac2aab192f70900c468826b2f335273710fc527e15ba753553b73c",
+      "size": 236,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4076_0.bin",
+      "sha256": "c209ee280d31c262c5c0057a835175f61c01635bf31cb7830d3da2a4c227934c",
+      "size": 728,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4077_0.bin",
+      "sha256": "e900d83d06a054f89a1277d997b2c0ebd351309bb1f763c02b86702224201cab",
+      "size": 296,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4078_0.bin",
+      "sha256": "fcce0ca0e09dc50056e7c32c1ab1ce6ae47d362d41053e5aafce66ebde4b71db",
+      "size": 1072,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4079_0.bin",
+      "sha256": "6d3840807bb342c8d9370880917e81df008db788b772ffac628a60a607ac2ab0",
+      "size": 1052,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4080_0.bin",
+      "sha256": "eecb90f592c51a52ae6ca260c81805211bb13fed9e5956eb5637f653f6320678",
+      "size": 1080,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4081_0.bin",
+      "sha256": "44ba7370065aff856844f06f24af8063182fec234d77fca5f7b12b3b4f77f60b",
+      "size": 544,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4082_0.bin",
+      "sha256": "e7f1edeffedaeaf702b984b8adcf883a0e8ea1fbffa1b0bb12949f6ebfa3827e",
+      "size": 228,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4083_0.bin",
+      "sha256": "16a9862a86f241022a6a2fbaadb349fe136ce818c2946e63dffb9f5421f187fa",
+      "size": 400,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4084_0.bin",
+      "sha256": "a3f68cdd8b607c784d481ec3cd7a852185a06eed00ee77f6cf8a2a1b23a2b187",
+      "size": 852,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4085_0.bin",
+      "sha256": "62d9cde99498e565a39bf29d815755b0e51c4f681fa35a9a0a60934f7ea002e4",
+      "size": 1100,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4086_0.bin",
+      "sha256": "917afd027cd1b911d3a95faec12cee2d2fd17e3bef88ad2dabb093a73976ae3f",
+      "size": 856,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4087_0.bin",
+      "sha256": "6764b7c8d53d5e64c8789721967fa2f54b68e232dbb8154becce62131ce4aefe",
+      "size": 768,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4088_0.bin",
+      "sha256": "937b336c9b5eacd653365983c8d864db814b03d598e3c76862098b370586c661",
+      "size": 1256,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4089_0.bin",
+      "sha256": "8654d246ae40d89b36c9f6240a312e953a998d39a7c770800b046edfdde74087",
+      "size": 560,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4090_0.bin",
+      "sha256": "eed410261388336e130ce8de64ffef4efd87550f3ff0dd159cdfa2ed7dbf120a",
+      "size": 1152,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4091_0.bin",
+      "sha256": "d374f189a8de158998e7f0c93110c2f4222657d8c410b3445ae42f2941e5dc0f",
+      "size": 1696,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4092_0.bin",
+      "sha256": "5807fb1f301ea18d07282b1986e9fbb3d2f42b3a2281cafe6aa245c22481c59f",
+      "size": 1096,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4093_0.bin",
+      "sha256": "e4d7a5070cc6a54d374fd9d32331ba19926943b0e76eb4a04646a66ff2d013f7",
+      "size": 1092,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4094_0.bin",
+      "sha256": "c7f497960201df79cbfe279e260cd778a4a72ddbcf4aa70b2903c9fee4342680",
+      "size": 884,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4095_0.bin",
+      "sha256": "3d10ccda9baf38fde9960e8b0b1bc26dc70bcf71e406df5da877c4977ca7d2e5",
+      "size": 908,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_STRING(6)_4096_0.bin",
+      "sha256": "a63b1e0df7642a01586d9d0486d1479ef8a3d95bf8a638dcd27806b59066386a",
+      "size": 1292,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/RT_VERSION(16)_1_1033.bin",
+      "sha256": "9cbdfe5d881529c48fa975646480f5a8f533ea0cc8990042be0757df5d7a23ad",
+      "size": 320,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_0_.text.bin",
+      "sha256": "979aef013c6b507cf3153c9f7d374261a93ad1c1fa3592de033681d79bccc772",
+      "size": 6618624,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_1_.data.bin",
+      "sha256": "4ef7cfe00254f2ff80533da88dd0633d33a0a761f903dff3c5249ef2e5e9d9b0",
+      "size": 638464,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_2_.tls.bin",
+      "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "size": 512,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_3_.rdata.bin",
+      "sha256": "fd94f8cbdb053aa0af2905b6dd550733973df68cfdbb51a895fdcf36b8a52a8c",
+      "size": 512,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_4_.idata.bin",
+      "sha256": "50b9f249e7d1cfecd9826094567b516457fc96ba13ced51f46ea603136828437",
+      "size": 20480,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_5_.didata.bin",
+      "sha256": "0fcfe386820c8606eb911192d820d130bccf9dc6f45a55bc0ce9b41463410b78",
+      "size": 2560,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_6_.edata.bin",
+      "sha256": "d8f7ce2ad24d89862f751190d89a2e1052eedceb54e581a0c67c62aab6c4f833",
+      "size": 65024,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_7_.rsrc.bin",
+      "sha256": "7c29bebd33c246b6be8dfb1ab563eb6e1d41dfb066eb9a671a3942c248e1f98a",
+      "size": 4819456,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/Se\u00e7\u00e3o_8_.reloc.bin",
+      "sha256": "c96ee9daf1e6d7e21b18838a4baca45aa9378eae1d8db57f510a01fe844c8491",
+      "size": 476672,
+      "suffix": ".bin"
+    },
+    {
+      "lines": 900,
+      "path": "dump/Strings.txt",
+      "samples": [
+        "#\tOffset\tEndere\u00e7o\tRegi\u00e3o\tTamanho\tInfo\tString",
+        "0\t00000000\t00dcb2dc\tDados\t2f\tA\tTPF0\u0015TAutocalColorSettings\u0014AutocalColorSettings",
+        "1\t0000003d\t00dcb319\tDados\t8\tA\tAutoSize",
+        "2\t00000047\t00dcb323\tDados\tb\tA\tBorderIcons",
+        "3\t00000054\t00dcb330\tDados\tc\tA\tbiSystemMenu",
+        "4\t00000061\t00dcb33d\tDados\ta\tA\tbiMaximize",
+        "5\t0000006d\t00dcb349\tDados\tb\tA\tBorderWidth",
+        "6\t0000007b\t00dcb357\tDados\t7\tA\tCaption",
+        "7\t00000083\t00dcb35f\tDados\t15\tA\t\u0014AutocalColorSettings",
+        "8\t00000099\t00dcb375\tDados\tc\tA\tClientHeight"
+      ],
+      "sha256": "d61b6b054f5f1d3f60ca22c6a60377749442ae9ef7e67de77b366aedba9d957b",
+      "size": 40509,
+      "suffix": ".txt"
+    },
+    {
+      "path": "dump/_AVI__10000_1040.bin",
+      "sha256": "667398a3679f44a060654ab3eb64bb987fe65675d4ff27951f7124e2d0aaeabf",
+      "size": 13824,
+      "suffix": ".bin"
+    },
+    {
+      "path": "dump/desktop.ini",
+      "sha256": "77dfbc0acf3983dc7877bd9107509f61ed1e433b271b5f45d85ac6128e145a9a",
+      "size": 246,
+      "suffix": ".ini"
+    }
+  ],
+  "method": "remote runner inventory and hashing; no local execution",
+  "root": "corpus/private/additional",
+  "status": "done"
+}

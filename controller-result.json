@@ -5,20 +5,12 @@
   },
   "executed": [
     {
-      "id": "WU-009",
+      "id": "WU-011",
       "result": {
-        "artifact": "artifacts/wu-009-result.json",
-        "retryable": true,
-        "status": "retry_required",
-        "unresolved": [
-          "preconditions",
-          "inputs",
-          "calculation",
-          "persistence",
-          "abort_conditions"
-        ]
+        "artifact": "artifacts/wu-011-result.json",
+        "files": 174
       },
-      "status": "ready"
+      "status": "done"
     },
     {
       "id": "WU-009",
@@ -166,8 +158,8 @@
     }
   ],
   "state_counts": {
-    "done": 8,
+    "done": 9,
     "ready": 2
   },
-  "timestamp": 1790611811
+  "timestamp": 1790611851
 }
