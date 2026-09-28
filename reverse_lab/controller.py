@@ -153,6 +153,20 @@ def _routine_protocol_artifact(summary, workunit_id):
     }
 
 
+def _additional_inventory(root):
+    root = Path(root) / "additional"
+    entries = []
+    for path in sorted(root.rglob("*")) if root.exists() else []:
+        if path.is_file():
+            entry = {"path": str(path.relative_to(root)).replace("\\", "/"), "size": path.stat().st_size, "sha256": _sha256(path), "suffix": path.suffix.lower()}
+            if path.suffix.lower() in {".txt", ".json", ".csv", ".log"}:
+                raw = path.read_bytes()
+                entry["lines"] = raw.count(b"\n") + (1 if raw else 0)
+                entry["samples"] = raw.decode("utf-8", "replace")[:500].splitlines()[:10]
+            entries.append(entry)
+    return {"status": "done", "root": "corpus/private/additional", "files": entries, "file_count": len(entries), "method": "remote runner inventory and hashing; no local execution"}
+
+
 def execute_workunit(workunit, corpus_root, artifacts_root):
     workunit_id = workunit["id"]
     if workunit_id == "WU-001":
@@ -215,8 +229,11 @@ def execute_workunit(workunit, corpus_root, artifacts_root):
     if workunit_id == "WU-009":
         fields = {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN"}
         unresolved = [key for key, value in fields.items() if value == "UNKNOWN"]
-        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "pass": workunit.get("attempts", 1), "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"], "automaticWrite": False, "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim"})
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "pass": workunit.get("attempts", 1), "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008", "WU-011"], "automaticWrite": False, "next_investigation": "correlate dump exports, resource strings, and command candidates before retrying"})
         return "ready", {"artifact": str(artifact), "status": "retry_required", "unresolved": unresolved, "retryable": True}
+    if workunit_id == "WU-011":
+        artifact = _write_artifact(artifacts_root, workunit_id, _additional_inventory(corpus_root))
+        return "done", {"artifact": str(artifact), "files": json.loads(artifact.read_text(encoding="utf-8"))["file_count"]}
     if workunit_id == "WU-010":
         artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "protocol_status": "saturated_for_closed_corpus", "closure_rule": "all mandatory WorkUnits complete; unresolved fields remain explicit UNKNOWN", "remaining_unknowns": ["ECU-side command semantics", "unobserved firmware branches", "physical validation"]})
         return "done", {"artifact": str(artifact), "protocol_status": "saturated_for_closed_corpus"}

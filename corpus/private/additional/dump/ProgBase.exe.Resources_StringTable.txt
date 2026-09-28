@@ -1,0 +1,514 @@
+#	Id	Idioma	String
+0	65024	0	The chunks must be compatible to be assigned.
+1	65025	0	This "Portable Network Graphics" image is invalid because the decoder found an unexpected end of the file.
+10	65034	0	The "Portable Network Graphics" could not be created because invalid image type parameters have being provided.
+100	65129	0	RadioButton%d
+101	65130	0	Caption cannot be empty
+102	65131	0	CategoryPanel must have a CategoryPanelGroup as its parent
+103	65132	0	Only CategoryPanels can be inserted into a CategoryPanelGroup
+104	65133	0	Unable to load style '%s'
+105	65134	0	Unable to load styles: %s
+106	65135	0	Style '%s' already registered
+107	65136	0	Login
+108	65137	0	Error setting path: "%s"
+109	65138	0	Separator
+11	65040	0	Error on loading Winsock2 library (%s)
+110	65139	0	Error setting %s.Count
+111	65140	0	Listbox (%s) style must be virtual in order to set Count
+112	65141	0	No OnGetItem event handler assigned
+113	65142	0	Cannot add columns or rows while expand style is fixed size
+114	65143	0	'%d' is not a valid span
+115	65144	0	Row index, %d, out of bounds
+116	65145	0	Column index, %d, out of bounds
+117	65146	0	ControlItem.Control cannot be set to owning GridPanel
+118	65147	0	Cannot delete a column that contains controls
+119	65148	0	Cannot delete a row that contains controls
+12	65041	0	Cannot change the size of a JPEG image
+120	65149	0	Member
+121	65150	0	Size Type
+122	65151	0	Value
+123	65152	0	Text exceeds memo capacity
+124	65153	0	Operation not supported on selected printer
+125	65154	0	There is no default printer currently selected
+126	65155	0	Menu '%s' is already being used by another form
+127	65156	0	Cannot open AVI
+128	65157	0	Docked control must have a name
+129	65158	0	Error removing control from dock tree
+13	65042	0	JPEG error #%d
+130	65159	0	 - Dock zone not found
+131	65160	0	 - Dock zone has no control
+132	65161	0	Error loading dock zone from the stream. Expecting version %d, but found %d.
+133	65162	0	Multiselect mode must be on for this feature
+134	65163	0	Length of value array must be >= length of prompt array
+135	65164	0	Prompt array must not be empty
+136	65165	0	&Username
+137	65166	0	&Password
+138	65167	0	&Domain
+139	65168	0	Home
+14	65043	0	JPEG Image File
+140	65169	0	Left
+141	65170	0	Up
+142	65171	0	Right
+143	65172	0	Down
+144	65173	0	Ins
+145	65174	0	Del
+146	65175	0	Shift+
+147	65176	0	Ctrl+
+148	65177	0	Alt+
+149	65178	0	Value must be between %d and %d
+15	65044	0	This "Portable Network Graphics" image is not valid because it contains invalid pieces of data (crc error)
+150	65179	0	All
+151	65180	0	Unable to insert a line
+152	65181	0	Invalid clipboard format
+153	65182	0	Clipboard does not support Icons
+154	65183	0	Cannot open clipboard: %s
+155	65184	0	&Help
+156	65185	0	&Abort
+157	65186	0	&Retry
+158	65187	0	&Ignore
+159	65188	0	&All
+16	65045	0	The "Portable Network Graphics" image could not be loaded because one of its main piece of data (ihdr) might be corrupted
+160	65189	0	N&o to All
+161	65190	0	Yes to &All
+162	65191	0	&Close
+163	65192	0	BkSp
+164	65193	0	Tab
+165	65194	0	Esc
+166	65195	0	Enter
+167	65196	0	Space
+168	65197	0	PgUp
+169	65198	0	PgDn
+17	65046	0	This "Portable Network Graphics" image is invalid because it has missing image parts.
+170	65199	0	End
+171	65200	0	Grid too large for operation
+172	65201	0	Too many rows or columns deleted
+173	65202	0	Grid index out of range
+174	65203	0	Fixed column count must be less than column count
+175	65204	0	Fixed row count must be less than row count
+176	65205	0	Cannot insert or delete rows from grid
+177	65206	0	Invalid input value
+178	65207	0	Invalid input value.  Use escape key to abandon changes
+179	65208	0	Warning
+18	65047	0	Could not decompress the image because it contains invalid compressed data.
+ Description: 
+180	65209	0	Error
+181	65210	0	Information
+182	65211	0	Confirm
+183	65212	0	&Yes
+184	65213	0	&No
+185	65214	0	OK
+186	65215	0	Cancel
+187	65216	0	OK
+188	65217	0	Cancel
+189	65218	0	&Yes
+19	65048	0	The "Portable Network Graphics" image contains an invalid palette.
+190	65219	0	&No
+191	65220	0	&Help
+192	65221	0	&Close
+193	65222	0	&Ignore
+194	65223	0	&Retry
+195	65224	0	Abort
+196	65225	0	&All
+197	65226	0	Cannot drag a form
+198	65227	0	Metafiles
+199	65228	0	Enhanced Metafiles
+2	65026	0	This "Portable Network Graphics" image contains no data.
+20	65049	0	The file being read is not a valid "Portable Network Graphics" image because it contains an invalid header. This file may be corrupted, try obtaining it again
+200	65229	0	Icons
+201	65230	0	Bitmaps
+202	65231	0	TIFF Images
+203	65232	0	Cannot make a visible window modal
+204	65233	0	Scrollbar property out of range
+205	65234	0	%s property out of range
+206	65235	0	Menu index out of range
+207	65236	0	Menu inserted twice
+208	65237	0	Sub-menu is not in menu
+209	65238	0	Not enough timers available
+21	65050	0	This "Portable Network Graphics" image is not supported or it might be invalid.
+(IHDR chunk is not the first)
+210	65239	0	Printer is not currently printing
+211	65240	0	Printing in progress
+212	65241	0	Printer index out of range
+213	65242	0	Printer selected is not valid
+214	65243	0	%s on %s
+215	65244	0	GroupIndex cannot be less than a previous menu item's GroupIndex
+216	65245	0	Cannot create form. No MDI forms are currently active
+217	65246	0	Can only modify an image if it contains a bitmap
+218	65247	0	A control cannot have itself as its parent
+219	65248	0	Out of system resources
+22	65051	0	This "Portable Network Graphics" image is not supported because either its width or height exceeds the maximum size of 65535 pixels.
+220	65249	0	Canvas does not allow drawing
+221	65250	0	Text format flag '%s' not supported
+222	65251	0	Invalid image size
+223	65252	0	Invalid ImageList
+224	65253	0	Unable to Replace Image
+225	65254	0	Invalid ImageList Index
+226	65255	0	Failed to read ImageList data from stream
+227	65256	0	Failed to write ImageList data to stream
+228	65257	0	Error creating window device context
+229	65258	0	Error creating window class
+23	65052	0	There is no such palette entry.
+230	65259	0	Cannot focus a disabled or invisible window
+231	65260	0	Control '%s' has no parent window
+232	65261	0	Parent given is not a parent of '%s'
+233	65262	0	Cannot hide an MDI Child Form
+234	65263	0	Cannot change Visible in OnShow or OnHide
+235	65264	0	Invalid code page
+236	65265	0	Invalid encoding name
+237	65266	0	No mapping for the Unicode character exists in the target multi-byte code page
+238	65267	0	Tab position incompatible with current tab style
+239	65268	0	Tab style incompatible with current tab position
+24	65053	0	This "Portable Network Graphics" image contains an unknown critical part which could not be decoded.
+240	65269	0	Bitmap image is not valid
+241	65270	0	Icon image is not valid
+242	65271	0	Metafile is not valid
+243	65272	0	Invalid pixel format
+244	65273	0	Invalid image
+245	65274	0	Scan line index out of range
+246	65275	0	Cannot change the size of an icon
+247	65276	0	Cannot change the size of a WIC Image
+248	65277	0	Invalid operation on TOleGraphic
+249	65278	0	Unknown picture file extension (.%s)
+25	65054	0	This "Portable Network Graphics" image is encoded with an unknown compression scheme which could not be decoded.
+250	65279	0	Unsupported clipboard format
+251	65280	0	Fri
+252	65281	0	Sat
+253	65282	0	Sunday
+254	65283	0	Monday
+255	65284	0	Tuesday
+256	65285	0	Wednesday
+257	65286	0	Thursday
+258	65287	0	Friday
+259	65288	0	Saturday
+26	65055	0	This "Portable Network Graphics" image uses an unknown interlace scheme which could not be decoded.
+260	65289	0	Unable to create directory
+261	65290	0	Invalid source array
+262	65291	0	Invalid destination array
+263	65292	0	Character index out of bounds (%d)
+264	65293	0	Start index out of bounds (%d)
+265	65294	0	Invalid count (%d)
+266	65295	0	Invalid destination index (%d)
+267	65296	0	February
+268	65297	0	March
+269	65298	0	April
+27	65056	0	Node cannot be null
+270	65299	0	May
+271	65300	0	June
+272	65301	0	July
+273	65302	0	August
+274	65303	0	September
+275	65304	0	October
+276	65305	0	November
+277	65306	0	December
+278	65307	0	Sun
+279	65308	0	Mon
+28	65057	0	Microsoft MSXML is not installed
+280	65309	0	Tue
+281	65310	0	Wed
+282	65311	0	Thu
+283	65312	0	Access violation at address %p in module '%s'. %s of address %p
+284	65313	0	System Error.  Code: %d.
+%s%s
+285	65314	0	A call to an OS function failed
+286	65315	0	Jan
+287	65316	0	Feb
+288	65317	0	Mar
+289	65318	0	Apr
+29	65058	0	No active document
+290	65319	0	May
+291	65320	0	Jun
+292	65321	0	Jul
+293	65322	0	Aug
+294	65323	0	Sep
+295	65324	0	Oct
+296	65325	0	Nov
+297	65326	0	Dec
+298	65327	0	January
+299	65328	0	Overflow while converting variant of type (%s) into type (%s)
+3	65027	0	The program tried to add a existent critical chunk to the current image which is not allowed.
+30	65059	0	Node "%s" not found
+300	65329	0	Variant overflow
+301	65330	0	Invalid argument
+302	65331	0	Invalid variant type
+303	65332	0	Operation not supported
+304	65333	0	Unexpected variant error
+305	65334	0	External exception %x
+306	65335	0	Assertion failed
+307	65336	0	Interface not supported
+308	65337	0	Exception in safecall method
+309	65338	0	Object lock not owned
+31	65060	0	IDOMNode required
+310	65339	0	Monitor support function not initialized
+311	65340	0	Feature not implemented
+312	65341	0	Method called on disposed object
+313	65342	0	%s (%s, line %d)
+314	65343	0	Abstract Error
+315	65344	0	Write
+316	65345	0	Execution
+317	65346	0	Invalid access
+318	65347	0	Format string too long
+319	65348	0	Error creating variant or safe array
+32	65061	0	Attributes are not supported on this node type
+320	65349	0	Variant or safe array index out of bounds
+321	65350	0	Variant or safe array is locked
+322	65351	0	Invalid variant type conversion
+323	65352	0	Invalid variant operation
+324	65353	0	Invalid NULL variant operation
+325	65354	0	Invalid variant operation (%s%.8x)
+%s
+326	65355	0	Custom variant type (%s%.4x) is out of range
+327	65356	0	Custom variant type (%s%.4x) already used by %s
+328	65357	0	Custom variant type (%s%.4x) is not usable
+329	65358	0	Too many custom variant types have been registered
+33	65062	0	Invalid node type
+330	65359	0	Could not convert variant of type (%s) into type (%s)
+331	65360	0	Floating point overflow
+332	65361	0	Floating point underflow
+333	65362	0	Invalid pointer operation
+334	65363	0	Invalid class typecast
+335	65364	0	Access violation at address %p. %s of address %p
+336	65365	0	Access violation
+337	65366	0	Stack overflow
+338	65367	0	Control-C hit
+339	65368	0	Privileged instruction
+34	65063	0	Mismatched paramaters to RegisterChildNodes
+340	65369	0	Operation aborted
+341	65370	0	Exception %s in module %s at %p.
+%s%s
+
+342	65371	0	Application Error
+343	65372	0	Format '%s' invalid or incompatible with argument
+344	65373	0	No argument for format '%s'
+345	65374	0	Variant method calls not supported
+346	65375	0	Read
+347	65376	0	'%s' is not a valid GUID value
+348	65377	0	'%s' is not a valid boolean value
+349	65378	0	Invalid argument to time encode
+35	65064	0	Element "%s" does not contain a single text node
+350	65379	0	Invalid argument to date encode
+351	65380	0	Out of memory
+352	65381	0	I/O error %d
+353	65382	0	Too many open files
+354	65383	0	File access denied
+355	65384	0	Read beyond end of file
+356	65385	0	Disk full
+357	65386	0	Invalid numeric input
+358	65387	0	Division by zero
+359	65388	0	Range check error
+36	65065	0	DOM Implementation does not support IDOMParseOptions
+360	65389	0	Integer overflow
+361	65390	0	Invalid floating point operation
+362	65391	0	Floating point division by zero
+363	65392	0	Cannot have multiple single cast observers added to the observers collection
+364	65393	0	The object does not implement the observer interface
+365	65394	0	No single cast observer with ID %d was added to the observer collection
+366	65395	0	No multi cast observer with ID %d was added to the observer collection
+367	65396	0	Observer is not available
+368	65397	0	The location sensor is started
+369	65398	0	Invalid date string: %s
+37	65066	0	ItemTag property is not initialized
+370	65399	0	Invalid time string: %s
+371	65400	0	Invalid time Offset string: %s
+372	65401	0	<unknown>
+373	65402	0	'%s' is not a valid integer value
+374	65403	0	'%s' is not a valid floating point value
+375	65404	0	'%s' is not a valid date
+376	65405	0	'%s' is not a valid time
+377	65406	0	'%s' is not a valid date and time
+378	65407	0	'%d.%d' is not a valid timestamp
+379	65408	0	32-bit Edition
+38	65067	0	Node is readonly
+380	65409	0	64-bit Edition
+381	65410	0	Windows
+382	65411	0	Windows Vista
+383	65412	0	Windows Server 2008
+384	65413	0	Windows 7
+385	65414	0	Windows Server 2008 R2
+386	65415	0	Windows 2000
+387	65416	0	Windows XP
+388	65417	0	Windows Server 2003
+389	65418	0	Windows Server 2003 R2
+39	65068	0	Refresh is only supported if the FileName or XML properties are set
+390	65419	0	Windows Server 2012
+391	65420	0	Windows Server 2012 R2
+392	65421	0	Windows 8
+393	65422	0	Windows 8.1
+394	65423	0	Observer is not supported
+395	65424	0	No help found for context %d
+396	65425	0	Unable to open Index
+397	65426	0	Unable to open Search
+398	65427	0	Unable to find a Table of Contents
+399	65428	0	No topic-based help system installed
+4	65028	0	It's not allowed to add a new chunk because the current image is invalid.
+40	65069	0	FileName cannot be blank
+400	65429	0	No help found for %s
+401	65430	0	Argument out of range
+402	65431	0	Item not found
+403	65432	0	Duplicates not allowed
+404	65433	0	Insufficient RTTI available to support this operation
+405	65434	0	Parameter count mismatch
+406	65435	0	Type '%s' is not declared in the interface section of a unit
+407	65436	0	VAR and OUT arguments must match parameter type exactly
+408	65437	0	Specified Login Credential Service not found
+409	65438	0	%s (Version %d.%d, Build %d, %5:s)
+41	65070	0	Line
+410	65439	0	%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)
+411	65440	0	Socket already open
+412	65441	0	Can't change value while socket is active
+413	65442	0	No help viewer that supports filters
+414	65443	0	String index out of range (%d).  Must be >= %d and <= %d
+415	65444	0	Invalid UTF32 character value.  Must be >= 0 and <= $10FFFF, excluding surrogate pair ranges
+416	65445	0	High surrogate char without a following low surrogate char at index: %d. Check that the string is encoded properly
+417	65446	0	Low surrogate char without a preceding high surrogate char at index: %d. Check that the string is encoded properly
+418	65447	0	Length of Strings and Objects arrays must be equal
+419	65448	0	Invalid Timeout value: %s
+42	65071	0	Error on call to Winsock2 library function %s
+420	65449	0	Timespan too long
+421	65450	0	The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue
+422	65451	0	Value cannot be NaN
+423	65452	0	Negating the minimum value of a Timespan is invalid
+424	65453	0	Invalid Timespan format
+425	65454	0	Timespan element too long
+426	65455	0	No context-sensitive help installed
+427	65456	0	Parameter %s cannot be nil
+428	65457	0	Parameter %s cannot be a negative value
+429	65458	0	Input buffer exceeded for %s = %d, %s = %d
+43	65072	0	Failed to Load Stream
+430	65459	0	Invalid characters in path
+431	65460	0	The specified path is too long
+432	65461	0	The specified path was not found
+433	65462	0	The path format is not supported
+434	65463	0	The drive cannot be found
+435	65464	0	The specified file was not found
+436	65465	0	?
+437	65466	0	The given "%s" local time is invalid (situated within the missing period prior to DST).
+438	65467	0	Windows socket error: %s (%d), on API '%s'
+439	65468	0	Asynchronous socket error %d
+44	65073	0	Failed to Save Stream
+440	65469	0	No address specified
+441	65470	0	Can't listen on an open socket
+442	65471	0	Can't create new socket
+443	65472	0	Failed to set data for '%s'
+444	65473	0	Resource %s not found
+445	65474	0	%s.Seek not implemented
+446	65475	0	Operation not allowed on sorted list
+447	65476	0	String expected
+448	65477	0	%s expected
+449	65478	0	%s not in a class registration group
+45	65074	0	%s is already associated with %s
+450	65479	0	Property %s does not exist
+451	65480	0	Stream write error
+452	65481	0	Thread creation error: %s
+453	65482	0	Thread Error: %s (%d)
+454	65483	0	Cannot terminate an externally created thread
+455	65484	0	Cannot wait for an externally created thread
+456	65485	0	Cannot call Start on a running or suspended thread
+457	65486	0	Cannot call CheckTerminated on an externally created thread
+458	65487	0	Cannot call SetReturnValue on an externally create thread
+459	65488	0	Invalid string constant
+46	65075	0	%d is an invalid PageIndex value.  PageIndex must be between 0 and %d
+460	65489	0	Line too long
+461	65490	0	List capacity out of bounds (%d)
+462	65491	0	List count out of bounds (%d)
+463	65492	0	List index out of bounds (%d)
+464	65493	0	Out of memory while expanding memory stream
+465	65494	0	%s has not been registered as a COM class
+466	65495	0	Number expected
+467	65496	0	ANSI or UTF8 encoding expected
+468	65497	0	%s on line %d
+469	65498	0	Error reading %s%s%s: %s
+47	65076	0	This control requires version 4.70 or greater of COMCTL32.DLL
+470	65499	0	Stream read error
+471	65500	0	Property is read-only
+472	65501	0	Failed to create key %s
+473	65502	0	Failed to get data for '%s'
+474	65503	0	Invalid component registration
+475	65504	0	A class named %s already exists
+476	65505	0	List does not allow duplicates ($0%x)
+477	65506	0	A component named %s already exists
+478	65507	0	String list does not allow duplicates
+479	65508	0	Cannot create file "%s". %s
+48	65077	0	Date exceeds maximum of %s
+480	65509	0	Cannot open file "%s". %s
+481	65510	0	Identifier expected
+482	65511	0	Unable to write to %s
+483	65512	0	Invalid binary value
+484	65513	0	Invalid file name - %s
+485	65514	0	Invalid stream format
+486	65515	0	''%s'' is not a valid component name
+487	65516	0	Invalid property value
+488	65517	0	Invalid property path
+489	65518	0	Invalid property value
+49	65078	0	Date is less than minimum of %s
+490	65519	0	Invalid data type for '%s'
+491	65520	0	UTF8: A start byte not followed by enough continuation bytes in position %s
+492	65521	0	UTF8: An unexpected continuation byte in %s-byte UTF8 in position %s
+493	65522	0	UTF8: Type cannot be determined out of header byte at position %s
+494	65523	0	End of path
+495	65524	0	Error in path
+496	65525	0	OLE error %.8x
+497	65526	0	Method '%s' not supported by automation object
+498	65527	0	Variant does not reference an automation object
+499	65528	0	Dispatch methods do not support more than 64 parameters
+5	65029	0	The png image could not be loaded from the resource ID.
+50	65079	0	You must be in ShowCheckbox mode to set to this date
+500	65529	0	Ancestor for '%s' not found
+501	65530	0	Cannot assign a %s to a %s
+502	65531	0	Bits index out of range
+503	65532	0	Can't write to a read-only resource stream
+504	65533	0	''%s'' expected
+505	65534	0	CheckSynchronize called from thread $%x, which is NOT the main thread
+506	65535	0	Class %s not found
+51	65080	0	Failed to set calendar date or time
+52	65081	0	Failed to set maximum selection range
+53	65082	0	Failed to set calendar min/max range
+54	65083	0	Failed to set calendar selected range
+55	65084	0	"%s" DOMImplementation already registered
+56	65085	0	No matching DOM Vendor: "%s"
+57	65086	0	Selected DOM Vendor does not support this property or method
+58	65087	0	Property or Method "%s" is not supported by DOM Vendor "%s"
+59	65088	0	Could not obtain OLE control window handle
+6	65030	0	Some operation could not be performed because the system is out of resources. Close some windows and try again.
+60	65089	0	License information for %s is invalid
+61	65090	0	License information for %s not found. You cannot use this control in design mode
+62	65091	0	Failed to clear tab control
+63	65092	0	Failed to delete tab at index %d
+64	65093	0	Failed to retrieve tab at index %d
+65	65094	0	Failed to get object at index %d
+66	65095	0	Failed to set tab "%s" at index %d
+67	65096	0	Failed to set object at index %d
+68	65097	0	MultiLine must be True when TabPosition is tpLeft or tpRight
+69	65098	0	Invalid item level assignment
+7	65031	0	Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)
+70	65099	0	Invalid level (%d) for item "%s"
+71	65100	0	Invalid index
+72	65101	0	Unable to insert an item
+73	65102	0	Invalid owner
+74	65103	0	RichEdit line insertion error
+75	65104	0	Style class '%s' already registered
+76	65105	0	Style '%s' not found
+77	65106	0	Style class '%s' not found
+78	65107	0	Invalid style handle
+79	65108	0	Invalid style format
+8	65032	0	This operation is not valid because the current image contains no valid header.
+80	65109	0	VCL Style File
+81	65110	0	Class '%s' is already registered for '%s'
+82	65111	0	Class '%s' is not registered for '%s'
+83	65112	0	%s parameter cannot be nil
+84	65113	0	A StyleHook class has not been registered for %s
+85	65114	0	Feature not supported by this style
+86	65115	0	Style '%s' is not registered
+87	65116	0	Cannot unregister the system style
+88	65117	0	Style not registered
+89	65118	0	'%s' is not a valid property value
+9	65033	0	The new size provided for image resizing is invalid.
+90	65119	0	OLE control activation failed
+91	65120	0	Auto
+92	65121	0	Percent
+93	65122	0	Absolute
+94	65123	0	Column%d
+95	65124	0	Row%d
+96	65125	0	Cannot remove shell notification icon
+97	65126	0	PageControl must first be assigned
+98	65127	0	%s requires Windows Vista or later
+99	65128	0	Button%d

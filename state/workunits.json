@@ -146,7 +146,8 @@
       "depends_on": [
         "WU-004",
         "WU-007",
-        "WU-008"
+        "WU-008",
+        "WU-011"
       ],
       "id": "WU-009",
       "method": "Join routine, command, frame, and static evidence into an evidence-indexed responsibility map.",
@@ -177,6 +178,14 @@
       "id": "WU-010",
       "method": "Run closure validation over all mandatory artifacts and preserve unresolved gaps.",
       "question": "Is the complete closed-corpus protocol dossier internally consistent?",
+      "status": "ready"
+    },
+    {
+      "acceptance": "Every additional file has path, size, SHA-256, type and text metadata where applicable.",
+      "depends_on": ["WU-001"],
+      "id": "WU-011",
+      "method": "Inventory and hash the additional LANDIXP executable and remote DUMP tree.",
+      "question": "What additional routines, exports, resources, strings, dumps, and patches are available?",
       "status": "ready"
     }
   ]
