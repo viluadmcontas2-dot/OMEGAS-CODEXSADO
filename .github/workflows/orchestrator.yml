@@ -88,9 +88,7 @@ jobs:
         run: |
           if grep -q '"status": "ready"' state/workunits.json; then
             sleep 15
-            gh api "repos/${GITHUB_REPOSITORY}/dispatches" --method POST --input - <<'JSON'
-            {"event_type":"omegas_reverse_continue","client_payload":{"source":"post_checkpoint"}}
-            JSON
+            printf '%s' '{"event_type":"omegas_reverse_continue","client_payload":{"source":"post_checkpoint"}}' | gh api "repos/${GITHUB_REPOSITORY}/dispatches" --method POST --input -
           else
             echo "No ready WorkUnit remains; remote protocol gate is closed or blocked."
           fi
