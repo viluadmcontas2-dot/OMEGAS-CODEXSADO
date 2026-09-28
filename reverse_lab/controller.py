@@ -215,7 +215,7 @@ def execute_workunit(workunit, corpus_root, artifacts_root):
     if workunit_id == "WU-009":
         fields = {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN"}
         unresolved = [key for key, value in fields.items() if value == "UNKNOWN"]
-        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"], "automaticWrite": False, "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim"})
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "pass": workunit.get("attempts", 1), "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"], "automaticWrite": False, "next_investigation": "re-run remote extraction with a new correlation pass; do not promote UNKNOWN to a claim"})
         return "ready", {"artifact": str(artifact), "status": "retry_required", "unresolved": unresolved, "retryable": True}
     if workunit_id == "WU-010":
         artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "protocol_status": "saturated_for_closed_corpus", "closure_rule": "all mandatory WorkUnits complete; unresolved fields remain explicit UNKNOWN", "remaining_unknowns": ["ECU-side command semantics", "unobserved firmware branches", "physical validation"]})
@@ -268,7 +268,10 @@ def main(argv=None):
         claim = claim_next_workunit(args.state_path, args.owner, args.lease_seconds)
         if not claim:
             break
-        status, result = execute_workunit(claim, args.corpus_root, args.artifacts_root)
+        try:
+            status, result = execute_workunit(claim, args.corpus_root, args.artifacts_root)
+        except Exception as exc:
+            status, result = "ready", {"reason": "runner_exception", "error_type": type(exc).__name__, "message": str(exc)[-500:], "retryable": True}
         release_workunit(args.state_path, claim["id"], status=status, result=result)
         executed.append({"id": claim["id"], "status": status, "result": result})
         if status not in {"done", "ready"}:
