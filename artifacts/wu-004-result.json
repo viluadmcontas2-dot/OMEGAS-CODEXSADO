@@ -1,0 +1,36 @@
+{
+  "claims": [
+    {
+      "claim": "ProgBase.exe opens Serial1 and configures 38400 baud, 8 data bits, no parity, 1 stop bit in the supplied Portmon log.",
+      "evidence": [
+        "WU-003"
+      ],
+      "id": "C-001",
+      "label": "OBSERVED"
+    },
+    {
+      "claim": "A reproducible offline simulator can model observed serial timing and bytes without transmitting them.",
+      "evidence": [
+        "WU-002",
+        "WU-003"
+      ],
+      "id": "C-002",
+      "label": "DERIVED"
+    },
+    {
+      "claim": "The ECU-side meaning of each byte and any autocalibration state transition is not proven by this corpus alone.",
+      "evidence": [
+        "WU-002",
+        "WU-003"
+      ],
+      "id": "C-003",
+      "label": "UNKNOWN"
+    }
+  ],
+  "safety": {
+    "automaticWrite": false,
+    "ecu_transmission": false,
+    "physical_validation": false
+  },
+  "status": "done"
+}

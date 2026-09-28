@@ -1,0 +1,45 @@
+{
+  "interpretation": "Observed Portmon records only; request/response semantics remain hypotheses until segmented and independently corroborated.",
+  "lines": 2631711,
+  "members": [
+    {
+      "name": "PortmonLOGNOVO.LOG",
+      "size": 149911521
+    }
+  ],
+  "rates": [
+    "38400",
+    "9600"
+  ],
+  "reads": 1118135,
+  "samples": [
+    "1  0.00000000  ProgBase.exe  IOCTL_SERIAL_GET_BAUD_RATE  Serial1  ",
+    "5  0.00000000  ProgBase.exe  IOCTL_SERIAL_SET_BAUD_RATE  Serial1  Rate: 38400",
+    "15  0.00000000  ProgBase.exe  IRP_MJ_WRITE  Serial1  Length 1: 00 ",
+    "16  0.00000000  ProgBase.exe  IRP_MJ_READ  Serial1  Length 1",
+    "20  0.00000000  ProgBase.exe  IOCTL_SERIAL_GET_BAUD_RATE  Silabser0  ",
+    "24  0.00000000  ProgBase.exe  IOCTL_SERIAL_SET_BAUD_RATE  Silabser0  Rate: 38400",
+    "34  0.00000000  ProgBase.exe  IRP_MJ_WRITE  Silabser0  Length 1: 00 ",
+    "35  0.00000000  ProgBase.exe  IRP_MJ_READ  Silabser0  Length 1",
+    "39  0.00000000  ProgBase.exe  IOCTL_SERIAL_GET_BAUD_RATE  Serial1  ",
+    "43  0.00000000  ProgBase.exe  IOCTL_SERIAL_SET_BAUD_RATE  Serial1  Rate: 9600",
+    "53  0.00000000  ProgBase.exe  IRP_MJ_WRITE  Serial1  Length 3: 00 02 02 ",
+    "54  0.00000000  ProgBase.exe  IRP_MJ_READ  Serial1  Length 1",
+    "55  0.00000000  ProgBase.exe  IRP_MJ_READ  Serial1  Length 2",
+    "59  0.00000000  ProgBase.exe  IOCTL_SERIAL_GET_BAUD_RATE  Silabser0  ",
+    "63  0.00000000  ProgBase.exe  IOCTL_SERIAL_SET_BAUD_RATE  Silabser0  Rate: 9600",
+    "73  0.00000000  ProgBase.exe  IRP_MJ_WRITE  Silabser0  Length 3: 00 02 02 ",
+    "74  0.00000000  ProgBase.exe  IRP_MJ_READ  Silabser0  Length 1",
+    "75  0.00000000  ProgBase.exe  IRP_MJ_READ  Silabser0  Length 2",
+    "78  0.00000000  ProgBase.exe  IRP_MJ_READ  Silabser0  Length 1",
+    "80  0.00000000  ProgBase.exe  IRP_MJ_READ  Silabser0  Length 1"
+  ],
+  "serial_devices": {
+    "Serial1": 39
+  },
+  "sessions": 1,
+  "status": "done",
+  "success": 1315836,
+  "timeouts": 118583,
+  "writes": 39524
+}

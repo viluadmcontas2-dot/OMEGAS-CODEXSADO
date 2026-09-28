@@ -18,26 +18,42 @@
     },
     {
       "acceptance": "Static file types, PE metadata, resource inventory, imports, strings index, and PLE headers are reported with offsets and tool versions.",
+      "attempts": 1,
+      "claimed_at": 1790605341,
       "depends_on": [
         "WU-001"
       ],
       "id": "WU-002",
       "method": "Offline static triage only; no binary execution.",
       "question": "What are the real formats and immediately observable structures?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-002-result.json",
+        "files": 4
+      },
+      "status": "done",
+      "updated_at": 1790605342
     },
     {
       "acceptance": "Portmon sessions are inventoried and raw direction/timing/byte records are preserved with segmentation hypotheses kept separate.",
+      "attempts": 1,
+      "claimed_at": 1790605342,
       "depends_on": [
         "WU-001"
       ],
       "id": "WU-003",
       "method": "Parse extracted Portmon artifacts after safe ZIP inventory.",
       "question": "What communication sessions and byte flows exist in the logs?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-003-result.json",
+        "lines": 2631711
+      },
+      "status": "done",
+      "updated_at": 1790605348
     },
     {
       "acceptance": "Autocalibration claims are cataloged as OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN with stable evidence IDs.",
+      "attempts": 1,
+      "claimed_at": 1790605348,
       "depends_on": [
         "WU-002",
         "WU-003"
@@ -45,17 +61,29 @@
       "id": "WU-004",
       "method": "Cross-reference UI/code/log evidence; no ECU operations.",
       "question": "What can be proven about autocalibration responsibility and state transitions?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-004-result.json",
+        "claims": 3
+      },
+      "status": "done",
+      "updated_at": 1790605348
     },
     {
       "acceptance": "A deterministic offline simulator contract, replay format, safety gate, and mobile integration boundary are documented from the evidence graph.",
+      "attempts": 1,
+      "claimed_at": 1790605348,
       "depends_on": [
         "WU-004"
       ],
       "id": "WU-005",
       "method": "Generate a replay-only simulator specification; no transport, ECU write, or automatic calibration command.",
       "question": "What can an independent app safely reproduce from the proven evidence?",
-      "status": "ready"
+      "result": {
+        "artifact": "artifacts/wu-005-result.json",
+        "protocol_status": "saturated_for_closed_corpus"
+      },
+      "status": "done",
+      "updated_at": 1790605348
     }
   ]
 }

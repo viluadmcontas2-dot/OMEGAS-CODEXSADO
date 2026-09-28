@@ -1,0 +1,28 @@
+{
+  "closure": {
+    "protocol_status": "saturated_for_closed_corpus",
+    "remaining_unknowns": [
+      "ECU-side byte semantics",
+      "physical timing outside Portmon capture",
+      "unobserved firmware branches"
+    ]
+  },
+  "simulator_contract": {
+    "determinism": "same corpus hashes and replay seed must yield byte-identical JSON output",
+    "forbidden": [
+      "serial open",
+      "ECU transmission",
+      "flash erase/write",
+      "automaticWrite=true",
+      "credential or license bypass"
+    ],
+    "input": "immutable evidence artifacts and replay fixtures",
+    "mobile_boundary": "offline core consumes evidence IDs; UI may propose, but a human must review any future action",
+    "outputs": [
+      "timestamped observed frames",
+      "confidence-labelled state hypotheses",
+      "human-review queue"
+    ]
+  },
+  "status": "done"
+}
