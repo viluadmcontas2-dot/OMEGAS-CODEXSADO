@@ -18,42 +18,26 @@
     },
     {
       "acceptance": "Static file types, PE metadata, resource inventory, imports, strings index, and PLE headers are reported with offsets and tool versions.",
-      "attempts": 1,
-      "claimed_at": 1790605341,
       "depends_on": [
         "WU-001"
       ],
       "id": "WU-002",
       "method": "Offline static triage only; no binary execution.",
       "question": "What are the real formats and immediately observable structures?",
-      "result": {
-        "artifact": "artifacts/wu-002-result.json",
-        "files": 4
-      },
-      "status": "done",
-      "updated_at": 1790605342
+      "status": "ready"
     },
     {
       "acceptance": "Portmon sessions are inventoried and raw direction/timing/byte records are preserved with segmentation hypotheses kept separate.",
-      "attempts": 1,
-      "claimed_at": 1790605342,
       "depends_on": [
         "WU-001"
       ],
       "id": "WU-003",
       "method": "Parse extracted Portmon artifacts after safe ZIP inventory.",
       "question": "What communication sessions and byte flows exist in the logs?",
-      "result": {
-        "artifact": "artifacts/wu-003-result.json",
-        "lines": 2631711
-      },
-      "status": "done",
-      "updated_at": 1790605348
+      "status": "ready"
     },
     {
       "acceptance": "Autocalibration claims are cataloged as OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN with stable evidence IDs.",
-      "attempts": 1,
-      "claimed_at": 1790605348,
       "depends_on": [
         "WU-002",
         "WU-003"
@@ -61,29 +45,22 @@
       "id": "WU-004",
       "method": "Cross-reference UI/code/log evidence; no ECU operations.",
       "question": "What can be proven about autocalibration responsibility and state transitions?",
-      "result": {
-        "artifact": "artifacts/wu-004-result.json",
-        "claims": 3
-      },
-      "status": "done",
-      "updated_at": 1790605348
+      "status": "ready"
     },
     {
       "acceptance": "A deterministic offline simulator contract, replay format, safety gate, and mobile integration boundary are documented from the evidence graph.",
-      "attempts": 1,
-      "claimed_at": 1790605348,
       "depends_on": [
         "WU-004"
       ],
       "id": "WU-005",
       "method": "Generate a replay-only simulator specification; no transport, ECU write, or automatic calibration command.",
       "question": "What can an independent app safely reproduce from the proven evidence?",
-      "result": {
-        "artifact": "artifacts/wu-005-result.json",
-        "protocol_status": "saturated_for_closed_corpus"
-      },
-      "status": "done",
-      "updated_at": 1790605348
-    }
+      "status": "ready"
+    },
+    {"id":"WU-006","question":"What exact request-byte candidates and event traces exist?","method":"Build bounded command candidates and event trace from every remote Portmon line.","acceptance":"Every observed write pattern has a stable candidate ID, count, trace references, and UNKNOWN semantics when unresolved.","depends_on":["WU-003"],"status":"ready"},
+    {"id":"WU-007","question":"Which executable routines open, configure, read, write, parse, and close the transport?","method":"Correlate static PE/resource evidence with Portmon operation families.","acceptance":"Routine catalog records trigger, consumer, termination, confidence, and unresolved symbol gaps.","depends_on":["WU-002","WU-003","WU-006"],"status":"ready"},
+    {"id":"WU-008","question":"How does each interaction start, progress, and terminate?","method":"Emit candidate frame schema and session state transitions from remote event order.","acceptance":"Frame/session records define start, fields, response, timeout, retry, and end without inventing ECU semantics.","depends_on":["WU-006","WU-007"],"status":"ready"},
+    {"id":"WU-009","question":"Which autocalibration routines and consumers are proven or unknown?","method":"Join routine, command, frame, and static evidence into an evidence-indexed responsibility map.","acceptance":"Every autocalibration field is OBSERVED, DERIVED, HYPOTHESIS, REFUTED, or UNKNOWN and automaticWrite remains false.","depends_on":["WU-004","WU-007","WU-008"],"status":"ready"},
+    {"id":"WU-010","question":"Is the complete closed-corpus protocol dossier internally consistent?","method":"Run closure validation over all mandatory artifacts and preserve unresolved gaps.","acceptance":"Protocol closes only after WU-001 through WU-009 are done and every unknown is explicit.","depends_on":["WU-005","WU-009"],"status":"ready"}
   ]
 }

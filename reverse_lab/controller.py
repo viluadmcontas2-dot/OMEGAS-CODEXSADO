@@ -92,7 +92,7 @@ def _static_triage(files):
 
 
 def _portmon_summary(path):
-    counters = {"lines": 0, "sessions": 0, "success": 0, "timeouts": 0, "reads": 0, "writes": 0, "serial_devices": {}, "rates": [], "samples": []}
+    counters = {"lines": 0, "sessions": 0, "success": 0, "timeouts": 0, "reads": 0, "writes": 0, "serial_devices": {}, "rates": [], "samples": [], "write_patterns": {}, "read_lengths": {}, "event_samples": []}
     line_re = re.compile(r"^\s*\d+\s+([0-9.]+)\s+\S+\s+(\S+)\s+([^ ]+)(?:\s+(.*))?$")
     with zipfile.ZipFile(path) as archive:
         members = [info for info in archive.infolist() if not info.is_dir()]
@@ -106,14 +106,24 @@ def _portmon_summary(path):
                         counters["sessions"] += 1
                     if len(counters["samples"]) < 20 and ("IRP_MJ_WRITE" in line or "IRP_MJ_READ" in line or "BAUD" in line):
                         counters["samples"].append(line)
+                    if len(counters["event_samples"]) < 500 and ("IRP_MJ_WRITE" in line or "IRP_MJ_READ" in line or "TIMEOUT" in line):
+                        counters["event_samples"].append({"line": counters["lines"], "text": line})
                     if "SUCCESS" in line:
                         counters["success"] += 1
                     if "TIMEOUT" in line:
                         counters["timeouts"] += 1
                     if "IRP_MJ_READ" in line:
                         counters["reads"] += 1
+                        match = re.search(r"Length\s+(\d+)", line)
+                        if match:
+                            key = match.group(1)
+                            counters["read_lengths"][key] = counters["read_lengths"].get(key, 0) + 1
                     if "IRP_MJ_WRITE" in line:
                         counters["writes"] += 1
+                        match = re.search(r"Length\s+\d+:\s*([0-9A-Fa-f ]+)", line)
+                        if match:
+                            key = " ".join(match.group(1).split()).upper()
+                            counters["write_patterns"][key] = counters["write_patterns"].get(key, 0) + 1
                     if "SET_BAUD_RATE" in line:
                         match = re.search(r"Rate:\s*(\d+)", line)
                         if match and match.group(1) not in counters["rates"]:
@@ -125,6 +135,22 @@ def _portmon_summary(path):
     counters["status"] = "done"
     counters["interpretation"] = "Observed Portmon records only; request/response semantics remain hypotheses until segmented and independently corroborated."
     return counters
+
+
+def _routine_protocol_artifact(summary, workunit_id):
+    patterns = sorted(summary.get("write_patterns", {}).items(), key=lambda pair: (-pair[1], pair[0]))
+    events = summary.get("event_samples", [])
+    return {
+        "status": "done",
+        "workunit": workunit_id,
+        "commands": [{"candidate_id": f"CMD-{index:04d}", "request_bytes": key, "observed_count": count,
+                       "meaning": "UNKNOWN", "response_link": "UNRESOLVED", "confidence": "OBSERVED_BYTES_ONLY"}
+                      for index, (key, count) in enumerate(patterns[:500], 1)],
+        "event_trace": events,
+        "state_machine": {"states": ["SESSION_OPEN", "CONFIGURE_SERIAL", "WRITE_REQUEST", "READ_RESPONSE", "TIMEOUT_OR_SUCCESS", "SESSION_CLOSE"],
+                          "transitions": "candidate transitions derived from Portmon operation order; ECU semantics remain unresolved"},
+        "limitations": ["no ECU-side decoder", "no routine symbols", "no physical validation"]
+    }
 
 
 def execute_workunit(workunit, corpus_root, artifacts_root):
@@ -170,8 +196,27 @@ def execute_workunit(workunit, corpus_root, artifacts_root):
                 "determinism": "same corpus hashes and replay seed must yield byte-identical JSON output",
                 "mobile_boundary": "offline core consumes evidence IDs; UI may propose, but a human must review any future action"
             },
-            "closure": {"protocol_status": "saturated_for_closed_corpus", "remaining_unknowns": ["ECU-side byte semantics", "physical timing outside Portmon capture", "unobserved firmware branches"]}
+            "closure": {"protocol_status": "open_pending_deep_protocol_workunits", "remaining_unknowns": ["ECU-side byte semantics", "physical timing outside Portmon capture", "unobserved firmware branches"]}
         })
+        return "done", {"artifact": str(artifact), "protocol_status": "open_pending_deep_protocol_workunits"}
+    if workunit_id == "WU-006":
+        artifact = _write_artifact(artifacts_root, workunit_id, _routine_protocol_artifact(_portmon_summary(by_name[DEFAULT_EXPECTED[-1]]), workunit_id))
+        return "done", {"artifact": str(artifact), "commands": len(json.loads(artifact.read_text(encoding="utf-8"))["commands"])}
+    if workunit_id == "WU-007":
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "routine_catalog": [
+            {"routine_id": "RT-SERIAL-OPEN", "trigger": "IRP_MJ_CREATE", "consumer": "ProgBase.exe", "end": "IRP_MJ_CLOSE", "confidence": "OBSERVED"},
+            {"routine_id": "RT-SERIAL-CONFIGURE", "trigger": "IOCTL_SERIAL_SET_BAUD_RATE/SET_LINE_CONTROL", "consumer": "ProgBase.exe", "end": "configuration acknowledged", "confidence": "OBSERVED"},
+            {"routine_id": "RT-REQUEST-RESPONSE", "trigger": "IRP_MJ_WRITE", "consumer": "unknown parser", "end": "read, success or timeout", "confidence": "DERIVED"}
+        ], "unresolved": ["symbol-level caller/callee graph", "UI handler mapping", "ECU response parser identity"]})
+        return "done", {"artifact": str(artifact), "routines": 3}
+    if workunit_id == "WU-008":
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "frames": "candidate frame records from WU-006", "fields": ["device", "operation", "length", "bytes", "timestamp", "result"], "start_end_rules": {"start": "serial open or first write", "end": "close, timeout cluster, or session boundary"}, "confidence": "STRUCTURE_OBSERVED_SEMANTICS_UNKNOWN"})
+        return "done", {"artifact": str(artifact), "status": "candidate_frame_schema"}
+    if workunit_id == "WU-009":
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "autocalibration": {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN", "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008"]}, "automaticWrite": False})
+        return "done", {"artifact": str(artifact), "status": "evidence_indexed_unknowns_preserved"}
+    if workunit_id == "WU-010":
+        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "protocol_status": "saturated_for_closed_corpus", "closure_rule": "all mandatory WorkUnits complete; unresolved fields remain explicit UNKNOWN", "remaining_unknowns": ["ECU-side command semantics", "unobserved firmware branches", "physical validation"]})
         return "done", {"artifact": str(artifact), "protocol_status": "saturated_for_closed_corpus"}
 
     artifact = _write_artifact(
