@@ -227,10 +227,23 @@ def execute_workunit(workunit, corpus_root, artifacts_root):
         artifact = _write_artifact(artifacts_root, workunit_id, {"status": "done", "frames": "candidate frame records from WU-006", "fields": ["device", "operation", "length", "bytes", "timestamp", "result"], "start_end_rules": {"start": "serial open or first write", "end": "close, timeout cluster, or session boundary"}, "confidence": "STRUCTURE_OBSERVED_SEMANTICS_UNKNOWN"})
         return "done", {"artifact": str(artifact), "status": "candidate_frame_schema"}
     if workunit_id == "WU-009":
+        # The closed corpus cannot resolve these fields. Repeating unchanged
+        # inputs cannot add evidence; preserve UNKNOWN and stop the loop.
         fields = {"preconditions": "UNKNOWN", "inputs": "UNKNOWN", "calculation": "UNKNOWN", "persistence": "UNKNOWN", "abort_conditions": "UNKNOWN"}
         unresolved = [key for key, value in fields.items() if value == "UNKNOWN"]
-        artifact = _write_artifact(artifacts_root, workunit_id, {"status": "incomplete", "pass": workunit.get("attempts", 1), "autocalibration": fields, "unresolved": unresolved, "evidence": ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008", "WU-011"], "automaticWrite": False, "next_investigation": "correlate dump exports, resource strings, and command candidates before retrying"})
-        return "ready", {"artifact": str(artifact), "status": "retry_required", "unresolved": unresolved, "retryable": True}
+        evidence = ["WU-002", "WU-003", "WU-006", "WU-007", "WU-008", "WU-011"]
+        artifact = _write_artifact(artifacts_root, workunit_id, {
+            "status": "saturated", "autocalibration": fields,
+            "unresolved": unresolved, "evidence": evidence,
+            "automaticWrite": False, "retryable": False,
+            "reason": "closed_corpus_no_new_evidence",
+            "next_investigation": "new independent source evidence and explicit manual reauthorization required",
+        })
+        return "saturated", {
+            "artifact": str(artifact), "status": "saturated",
+            "reason": "closed_corpus_no_new_evidence",
+            "unresolved": unresolved, "retryable": False,
+        }
     if workunit_id == "WU-011":
         artifact = _write_artifact(artifacts_root, workunit_id, _additional_inventory(corpus_root))
         return "done", {"artifact": str(artifact), "files": json.loads(artifact.read_text(encoding="utf-8"))["file_count"]}
@@ -288,17 +301,17 @@ def main(argv=None):
         try:
             status, result = execute_workunit(claim, args.corpus_root, args.artifacts_root)
         except Exception as exc:
-            status, result = "ready", {"reason": "runner_exception", "error_type": type(exc).__name__, "message": str(exc)[-500:], "retryable": True}
+            status, result = "blocked", {"reason": "runner_exception_requires_review", "error_type": type(exc).__name__, "message": str(exc)[-500:], "retryable": False}
         release_workunit(args.state_path, claim["id"], status=status, result=result)
         executed.append({"id": claim["id"], "status": status, "result": result})
-        if status not in {"done", "ready"}:
+        if status != "done":
             break
 
     summary = {
         "timestamp": int(time.time()),
         "executed": executed,
         "state_counts": summarize_state(args.state_path),
-        "continuation": maybe_dispatch_continue(args.auto_dispatch and any(item["status"] in {"done", "ready"} for item in executed)),
+        "continuation": maybe_dispatch_continue(args.auto_dispatch and any(item["status"] == "done" for item in executed)),
     }
     print(json.dumps(summary, indent=2, sort_keys=True))
     return 0
