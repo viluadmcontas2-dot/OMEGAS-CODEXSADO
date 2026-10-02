@@ -7,20 +7,13 @@ on:
         description: "Maximum WorkUnits to execute in this cycle"
         required: false
         default: "10"
-  repository_dispatch:
-    types: [omegas_reverse_continue]
-  schedule:
-    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
-  actions: write
-  issues: write
-  pull-requests: write
 
 concurrency:
   group: omegas-reverse-orchestrator
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   orchestrate:
@@ -81,14 +74,4 @@ jobs:
           if invalid:
               raise SystemExit(f"invalid statuses: {sorted(invalid)}")
           print(json.dumps({"statuses": sorted(statuses), "workunits": len(state.get("workunits", []))}, sort_keys=True))
-      - name: Continue after durable checkpoint
-        if: ${{ success() }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if grep -q '"status": "ready"' state/workunits.json; then
-            sleep 15
-            printf '%s' '{"event_type":"omegas_reverse_continue","client_payload":{"source":"post_checkpoint"}}' | gh api "repos/${GITHUB_REPOSITORY}/dispatches" --method POST --input -
-          else
-            echo "No ready WorkUnit remains; remote protocol gate is closed or blocked."
-          fi
+      # Automatic continuation deliberately disabled. Manual dispatch only.
