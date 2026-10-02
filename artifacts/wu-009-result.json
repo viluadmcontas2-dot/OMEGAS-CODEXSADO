@@ -15,14 +15,16 @@
     "WU-008",
     "WU-011"
   ],
-  "next_investigation": "correlate dump exports, resource strings, and command candidates before retrying",
+  "next_investigation": "Only resume with new independent source evidence and explicit manual reauthorization",
   "pass": 101820,
-  "status": "incomplete",
+  "status": "saturated",
   "unresolved": [
     "preconditions",
     "inputs",
     "calculation",
     "persistence",
     "abort_conditions"
-  ]
+  ],
+  "retryable": false,
+  "reason": "closed_corpus_no_new_evidence"
 }
