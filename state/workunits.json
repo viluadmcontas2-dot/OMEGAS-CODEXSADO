@@ -154,17 +154,19 @@
       "question": "Which autocalibration routines and consumers are proven or unknown?",
       "result": {
         "artifact": "artifacts/wu-009-result.json",
-        "retryable": true,
-        "status": "retry_required",
+        "status": "saturated",
+        "reason": "closed_corpus_no_new_evidence",
+        "retryable": false,
         "unresolved": [
           "preconditions",
           "inputs",
           "calculation",
           "persistence",
           "abort_conditions"
-        ]
+        ],
+        "note": "Repeated attempts with unchanged evidence cannot establish new facts. Reopen only after independent evidence and owner approval."
       },
-      "status": "ready",
+      "status": "saturated",
       "updated_at": 1790903778
     },
     {
@@ -178,7 +180,13 @@
       "id": "WU-010",
       "method": "Run closure validation over all mandatory artifacts and preserve unresolved gaps.",
       "question": "Is the complete closed-corpus protocol dossier internally consistent?",
-      "status": "ready"
+      "status": "blocked",
+      "result": {
+        "status": "blocked",
+        "reason": "dependency_WU-009_saturated",
+        "retryable": false,
+        "note": "Cannot mark dossier done while required WU-009 retains UNKNOWN fields."
+      }
     },
     {
       "acceptance": "Every additional file has path, size, SHA-256, type and text metadata where applicable.",
